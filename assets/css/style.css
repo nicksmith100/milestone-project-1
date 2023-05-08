@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* General styles */
+
+body {
+    padding-top: 150px;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Nav */
+
+nav {
+    min-height: 150px;
+}
+
+.navbar-img {
+    height: 100px;
+}
+
+.nav-icon {
+    margin-right: 6px;
+}
+
+.nav-link {
+    color: #498082;
+}
+
+.nav-link:hover {
+    color: #f2d6d5;
+}
+
+.bi-list {
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    color: #498082;
+}
+
+
+/* Images */
+
+.primary-image-container {
+    padding: 0;
+}
+
+.primary-image {
+    width: inherit;
+    padding: 0;
+}
+
+
+/* Button */
+
+#book-now-btn {
+    margin-top: 20px;
+}
+
+a.btn.btn-primary {
+    background-color: #498082;
+    color: #fff;
+    border-color: #498082;
+}
+
+a.btn.btn-primary:hover {
+    background-color: #f2d6d5;
+    color: #498082;
+    border-color: #498082;
+}
+
+/* Footer */
+
+.footer-icon {
+    color: #498082;
+}
