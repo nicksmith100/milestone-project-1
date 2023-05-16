@@ -10,18 +10,27 @@
         type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <title>Mr & Mrs Smith's Lawn Games</title>
+    <title>Smith Lawn Games</title>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light container border-bottom">
-        <a class="navbar-brand" href="/"><img src="assets/images/full-logo.png"
-                alt="Mr & Mrs Smith's Lawn Games full logo" class="navbar-img d-none d-md-block"><img
-                src="assets/images/small-logo.png" alt="Mr & Mrs Smith's Lawn Games daisy logo"
-                class="navbar-img d-md-none"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDropdown"
+    <nav class="navbar navbar-expand-sm navbar-light bg-light container border-bottom">
+        <a class="navbar-brand" href="/">
+            <img src="assets/images/block-logo-blank.png" alt="Block game logo" class="navbar-img d-none d-sm-block">
+            <img src="assets/images/block-logo.png" alt="Block game logo with Smith Lawn Games text"
+                class="navbar-img-sml d-block d-sm-none">
+        </a>
+        <a class="navbar-title" href="/">
+            <h1 class="title d-none d-lg-block">Smith Lawn Games</h1>
+            <h1 class="title-comp d-none d-sm-block d-lg-none">Smith Lawn Games</h1>
+        </a>
+
+
+
+
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDropdown"
             aria-controls="navbarTogglerDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="nav-toggler-icon"><i class="bi bi-list"></i></span>
+            <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDropdown">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -38,94 +47,384 @@
         </div>
     </nav>
 
+    <!-- Primary Image -->
     <section id="hero-image" class="container bg-light primary-image-container border-top border-bottom">
         <div class="row">
             <div class="col-12">
-                <img src="assets/images/hero-image.jpg" alt="Selection of lawn games" class="primary-image">
+                <img src="assets/images/hero-image.jpg" alt="Selection of lawn games" class="primary-image hero-image">
+                <div class="row">
+                    <div id="carousel-quotes" class="carousel slide col-6 offset-6 d-none d-sm-block"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-quotes" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-quotes" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-quotes" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <div class="carousel-caption d-block">
+                                    <p class="quote">"Fab lawn games at such a brilliant price! Great communication on
+                                        the
+                                        lead up and
+                                        collection."</p>
+                                    <p class="quote-customer">S, Canada Lodge</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="carousel-caption d-block">
+                                    <p class="quote">"Thank you so much for the lawn games! They went down a storm and
+                                        everyone had so much fun... we'll be recommending you to our friends!"</p>
+                                    <p class="quote-customer">B, Manor Parc Hotel</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="carousel-caption d-block">
+                                    <p class="quote">"Games went down a treat!"</p>
+                                    <p class="quote-customer">D, Bridgend</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quote Carousel Buttons
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-quotes"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-quotes"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        -->
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- /.primary image -->
 
-    <section id="content-home" class="container bg-light border-top border-bottom">
-
-        <div class="row">
-            <div class="col">
-                <p><a id="book-now-btn" class="btn btn-primary" href="booking.html">Book Now!</a></p>
-            </div>
-        </div>
+    <!-- /Content -->
+    <section class="content container bg-light border-top border-bottom">
 
         <div class="row">
             <div class="col">
-                <h1>Our packages</h1>
+                <h2>Our packages</h2>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-12 col-sm-4 package-box">
+                <h3 id="silver-heading">Silver</h3>
+                <div class="package-text">
+                    <h4>6 games for <span class="fw-bold">£100</span></h4>
+                    <ul class="package-list">
+                        <li>2 x Tier 1 games</li>
+                        <li>2 x Tier 2 games</li>
+                        <li>2 x Tier 3 games</li>
+                        <li>Wooden chalkboard sign</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><a id="silver-btn" class="btn btn-booking" href="booking.html">Book Now!</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 package-box">
+                <h3 id="gold-heading">Gold</h3>
+                <div class="package-text">
+                    <h4>8 games for <span class="fw-bold">£125</span></h4>
+                    <ul class="package-list">
+                        <li>3 x Tier 1 games</li>
+                        <li>2 x Tier 2 games</li>
+                        <li>3 x Tier 3 games</li>
+                        <li>Wooden chalkboard sign</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><a id="gold-btn" class="btn btn-booking" href="booking.html">Book Now!</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-4 package-box">
+                <h3 id="platinum-heading">Platinum</h3>
+                <div class="package-text">
+                    <h4>All 10 games for <span class="fw-bold">£150</span></h4>
+                    <ul class="package-list">
+                        <li>4 x Tier 1 games</li>
+                        <li>3 x Tier 2 games</li>
+                        <li>3 x Tier 3 games</li>
+                        <li>Wooden chalkboard sign</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><a id="platinum-btn" class="btn btn-booking" href="booking.html">Book Now!</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="games">
             <div class="col">
-                <h2>Platinum</h2>
+                <h2>The games</h2>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 col-sm-6">
-                <p>Platinum gallery placeholder</p>
+        <div id="tier1">
+
+            <div class="row">
+                <div class="col">
+                    <h3 class="games-heading">Tier 1</h3>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div id="carousel-tier1" class="carousel slide carousel-games">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-tier1" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-tier1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-tier1" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel-tier1" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/4inarow.jpg" class="d-block w-100" alt="Giant 4-in-a-row game">
+                                <div class="carousel-caption d-block">
+                                    <h5>4-in-a-row</h5>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/hightower.jpg" class="d-block w-100"
+                                    alt="Giant high tower game">
+                                <div class="carousel-caption d-block">
+                                    <h5>Block Tower</h5>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/limbo.jpg" class="d-block w-100" alt="Timber limbo game">
+                                <div class="carousel-caption d-block">
+                                    <h5>Limbo</h5>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/croquet.jpg" class="d-block w-100"
+                                    alt="Croquet mallets and balls against a fence">
+                                <div class="carousel-caption d-block">
+                                    <h5>Croquet</h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-tier1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-tier1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 games-text">
+                    <ul>
+                        <li>4-in-a-Row</li>
+                        <p class="small">Big Game Hunters "Big 4" (4ft high frame + 42 counters)
+                        </p>
+                        <li>Block Tower</li>
+                        <p class="small">Big Game Hunters "Giant Hi-Tower" (57 wooden blocks, starting
+                            height 3ft 6in)
+                        </p>
+                        <li>Limbo</li>
+                        <p class="small">Uber Limbo Set (2 x 5ft timber frames + pole)
+                        </p>
+                        <li>Croquet</li>
+                        <p class="small">Big Game Hunters "Full Size Croquet Set" (4 mallets, 4 balls, 6 hoops, 1
+                            winning
+                            post)
+                        </p>
+
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <h2>Gold</h2>
+        <div id="tier2">
+            <div class="row">
+                <div class="col">
+                    <h3 class="games-heading">Tier 2</h3>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div id="carousel-tier2" class="carousel slide carousel-games">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-tier2" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-tier2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-tier2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/skittles.jpg" class="d-block w-100"
+                                    alt="Wooden skittles and three balls">
+                                <div class="carousel-caption d-block">
+                                    <h5>Skittles</h5>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/boules.jpg" class="d-block w-100"
+                                    alt="Wooden boules with jack and measurer">
+                                <div class="carousel-caption d-block">
+                                    <h5>Boules</h5>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/tincanalley.jpg" class="d-block w-100"
+                                    alt="6 numbered tin cans on a wooden crate">
+                                <div class="carousel-caption d-block">
+                                    <h5>Tin Can Alley</h5>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-tier2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-tier2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 games-text">
+                    <ul>
+                        <li>Skittles</li>
+                        <p class="small">Big Game Hunters "Wooden Garden Skittles" (9 x 23cm skittles + 3 regulation
+                            balls)
+                        </p>
+                        <li>Boules</li>
+                        <p class="small">Big Game Hunters "Wooden Boules Set" (8 polished wooden boules, 1 measurer, 1
+                            wooden jack)
+                        </p>
+                        <li>Tin Can Alley</li>
+                        <p class="small">Tin Can Alley (6 tins + 2 bean bags + crates)
+                        </p>
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
-        <div class="row">
-            <div class="col-12 col-sm-6">
-                <p>Gold gallery placeholder</p>
+        <div id="tier3">
+
+            <div class="row">
+                <div class="col">
+                    <h3 class="games-heading">Tier 3</h3>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
-            </div>
-        </div>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div id="carousel-tier3" class="carousel slide carousel-games">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-tier3" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-tier3" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-tier3" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
 
-        <div class="row">
-            <div class="col">
-                <h2>Silver</h2>
-            </div>
-        </div>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/dominoes.jpg" class="d-block w-100"
+                                    alt="Large black dominoes in a wicker hamper">
+                                <div class="carousel-caption d-block">
+                                    <h5>Dominoes</h5>
 
-        <div class="row">
-            <div class="col-12 col-sm-6">
-                <p>Silver gallery placeholder</p>
-            </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/xo.jpg" class="d-block w-100"
+                                    alt="Noughts and crosses shapes in a rope grid">
+                                <div class="carousel-caption d-block">
+                                    <h5>Noughts & Crosses</h5>
 
-            <div class="col-12 col-sm-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/quoits.jpg" class="d-block w-100" alt="Wooden ring toss game">
+                                <div class="carousel-caption d-block">
+                                    <h5>Quoits</h5>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-tier3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-tier3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 games-text">
+                    <ul>
+                        <li>Dominoes</li>
+                        <p class="small">Jacques of London Giant Dominoes (28 black wooden dominoes, each 7 inches in
+                            length)
+                        </p>
+                        <li>Noughts & Crosses</li>
+                        <p class="small">Ginger Ray Giant Noughts & Crosses (rope grid + 10 wooden shapes)
+                        </p>
+                        <li>Quoits</li>
+                        <p class="small">Ring toss game (wooden cross, 5 posts, 4 rings)
+                        </p>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -135,13 +434,14 @@
     <!-- Footer -->
     <footer class="container bg-light border-top">
         <ul class="nav justify-content-end list-unstyled py-2">
-            <li class="ms-3"><a class="footer-icon" href="https://instagram.com/smithlawngames"><i
+            <li class="ms-3"><a class="footer-icon" href="https://instagram.com/smithlawngames" target="_blank"><i
                         class="bi bi-instagram"></i>
                 </a></li>
-            <li class="ms-3"><a class="footer-icon" href="https://facebook.com/smithlawngames"><i
+            <li class="ms-3"><a class="footer-icon" href="https://facebook.com/smithlawngames" target="_blank"><i
                         class="bi bi-facebook"></i>
                 </a></li>
-            <li class="ms-3"><a class="footer-icon" href="https://wa.me/447814016537"><i class="bi bi-whatsapp"></i>
+            <li class="ms-3"><a class="footer-icon" href="https://wa.me/447814016537" target="_blank"><i
+                        class="bi bi-whatsapp"></i>
             </li>
         </ul>
     </footer>
@@ -149,7 +449,6 @@
 
     <!-- Scripts -->
 
-    <script src="https://kit.fontawesome.com/8ea7d77cb3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

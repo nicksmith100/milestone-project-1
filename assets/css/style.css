@@ -1,9 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Desyrel';
+    src: url('fonts/Desyrel.woff2') format('woff2'),
+        url('fonts/Desyrel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* General styles */
 
 body {
-    padding-top: 150px;
+    padding-top: 0px;
+    background: #213c3d;
+    color: #213c3d;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
 }
 
 .container {
@@ -11,14 +24,39 @@ body {
     padding-right: 20px;
 }
 
+.content {
+    padding-top: 20px;
+}
+
 /* Nav */
 
 nav {
-    min-height: 150px;
+    height: 120px;
 }
 
 .navbar-img {
     height: 100px;
+    float: left;
+}
+
+.navbar-img-sml {
+    height: 75px;
+}
+
+.navbar-title {
+    text-decoration: none;
+}
+
+.title,
+.title-comp {
+    font-family: 'Desyrel', sans-serif;
+    color: #498082;
+    margin: auto;
+}
+
+.title-comp {
+    width: 50px;
+    font-size: 28px;
 }
 
 .nav-icon {
@@ -27,10 +65,11 @@ nav {
 
 .nav-link {
     color: #498082;
+    font-family: 'Desyrel', sans-serif;
 }
 
 .nav-link:hover {
-    color: #f2d6d5;
+    color: #213c3d;
 }
 
 .bi-list {
@@ -39,13 +78,17 @@ nav {
 
 .navbar-toggler {
     color: #498082;
+    border: none;
 }
 
 
-/* Images */
+
+/* Primary Image */
 
 .primary-image-container {
     padding: 0;
+    overflow: hidden;
+    position: relative;
 }
 
 .primary-image {
@@ -53,27 +96,154 @@ nav {
     padding: 0;
 }
 
-
-/* Button */
-
-#book-now-btn {
-    margin-top: 20px;
+.hero-image {
+    margin-top: -60px;
 }
 
-a.btn.btn-primary {
-    background-color: #498082;
+#carousel-quotes {
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 200px;
+    top: 50%;
+    margin-top: -100px;
+    right: 0;
+}
+
+#carousel-quotes .carousel-item {
+    height: 200px;
+}
+
+#carousel-quotes .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+
+}
+
+.quote {
+    font-size: 14px;
     color: #fff;
-    border-color: #498082;
+    font-style: italic;
+    margin-bottom: 6px;
 }
 
-a.btn.btn-primary:hover {
-    background-color: #f2d6d5;
-    color: #498082;
-    border-color: #498082;
+.quote-customer {
+    font-size: 10px;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+
+/* Packages */
+
+ul.package-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.package-box {
+    text-align: center;
+    border-radius: 5%;
+    border: 2px #213c3d solid;
+    width: 280px;
+    height: 270px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+
+#silver-heading,
+#gold-heading,
+#platinum-heading {
+    width: 280px;
+    padding-bottom: 5px;
+    position: absolute;
+    left: 0;
+}
+
+#silver-heading,
+#silver-btn {
+    background: linear-gradient(#eeeeee, silver);
+}
+
+#gold-heading,
+#gold-btn {
+    background: linear-gradient(#fcf6ba, #D4AF37);
+}
+
+
+
+#platinum-heading,
+#platinum-btn {
+    background: linear-gradient(#ddd, grey);
+}
+
+#silver-btn,
+#gold-btn,
+#platinum-btn {
+    margin-top: 50px;
+    color: #213c3d;
+}
+
+a.btn.btn-booking {
+    border: #213c3d 1px solid;
+}
+
+a.btn.btn-booking:hover {
+    border: #213c3d 2px solid;
+}
+
+.package-text {
+    position: relative;
+    top: 50px;
+}
+
+/* Games */
+
+#games {
+    padding-top: 50px;
+}
+
+#tier1,
+#tier2,
+#tier3 {
+    padding: 20px 0;
+}
+
+.games-heading {
+    margin-top: 0px;
+}
+
+.carousel-games img {
+
+    border: #213c3d 1px solid;
+    border-radius: 5%;
+
+}
+
+.carousel-games .carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.games-text {
+    margin: auto 0;
+}
+
+.games-text li {
+    list-style: none;
+    font-weight: bold;
 }
 
 /* Footer */
 
-.footer-icon {
+a.footer-icon {
     color: #498082;
+}
+
+a.footer-icon:hover {
+    color: #213c3d;
 }
