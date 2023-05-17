@@ -48,10 +48,11 @@
     </nav>
 
     <!-- Primary Image -->
-    <section id="hero-image" class="container bg-light primary-image-container border-top border-bottom">
+    <section id="hero-image-container" class="container bg-light primary-image-container border-top border-bottom">
         <div class="row">
             <div class="col-12">
-                <img src="assets/images/hero-image.jpg" alt="Selection of lawn games" class="primary-image hero-image">
+                <img src="assets/images/hero-image.jpg" alt="Selection of lawn games" class="primary-image"
+                    id="hero-image">
                 <div class="row">
                     <div id="carousel-quotes" class="carousel slide col-6 offset-6 d-none d-sm-block"
                         data-bs-ride="carousel">
@@ -82,7 +83,7 @@
                             </div>
                             <div class="carousel-item" data-bs-interval="5000">
                                 <div class="carousel-caption d-block">
-                                    <p class="quote">"Games went down a treat!"</p>
+                                    <p class="quote">"The games went down a treat!"</p>
                                     <p class="quote-customer">D, Bridgend</p>
                                 </div>
                             </div>
@@ -112,9 +113,15 @@
     <section class="content container bg-light border-top border-bottom">
 
         <div class="row">
-            <div class="col">
-                <h2>Our packages</h2>
+            <div class="col-6">
+                <h2 class="content-title">Our packages</h2>
             </div>
+
+            <div class="col-6 text-end">
+                <a id="btn-booking" class="btn btn-primary" href="booking.html">Book
+                    Now!</a>
+            </div>
+
         </div>
         <div class="row">
 
@@ -129,11 +136,7 @@
                         <li>Wooden chalkboard sign</li>
                     </ul>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p><a id="silver-btn" class="btn btn-booking" href="booking.html">Book Now!</a></p>
-                    </div>
-                </div>
+
             </div>
 
             <div class="col-12 col-sm-4 package-box">
@@ -146,11 +149,6 @@
                         <li>3 x Tier 3 games</li>
                         <li>Wooden chalkboard sign</li>
                     </ul>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p><a id="gold-btn" class="btn btn-booking" href="booking.html">Book Now!</a></p>
-                    </div>
                 </div>
             </div>
 
@@ -165,13 +163,11 @@
                         <li>Wooden chalkboard sign</li>
                     </ul>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p><a id="platinum-btn" class="btn btn-booking" href="booking.html">Book Now!</a></p>
-                    </div>
-                </div>
+
             </div>
         </div>
+
+
 
         <div class="row" id="games">
             <div class="col">

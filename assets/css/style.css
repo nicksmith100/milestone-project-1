@@ -24,15 +24,25 @@ body {
     padding-right: 20px;
 }
 
-.content {
-    padding-top: 20px;
+
+
+a.btn-primary {
+
+    color: #fff;
+    background: #498082;
+    margin: 0 auto;
+    border: #213c3d 1px solid;
+
+}
+
+a.btn-primary:hover {
+    background-color: #213c3d;
+    border: #213c3d 1px solid;
 }
 
 /* Nav */
 
-nav {
-    height: 120px;
-}
+nav {}
 
 .navbar-img {
     height: 100px;
@@ -89,15 +99,27 @@ nav {
     padding: 0;
     overflow: hidden;
     position: relative;
+    max-height: 250px;
+
 }
 
 .primary-image {
     width: inherit;
     padding: 0;
+    object-fit: cover;
+    margin: auto 0;
 }
 
-.hero-image {
-    margin-top: -60px;
+#hero-image {
+    margin-top: -20px;
+}
+
+#about-image {
+    margin-top: -30px;
+}
+
+#booking-image {
+    margin-top: -120px;
 }
 
 #carousel-quotes {
@@ -134,6 +156,15 @@ nav {
     margin-bottom: 6px;
 }
 
+/* Content */
+
+.content-title {
+    margin-bottom: 20px;
+}
+
+.content {
+    padding-top: 20px;
+}
 
 /* Packages */
 
@@ -146,8 +177,8 @@ ul.package-list {
     text-align: center;
     border-radius: 5%;
     border: 2px #213c3d solid;
-    width: 280px;
-    height: 270px;
+    width: 200px;
+    height: 250px;
     margin: 10px auto;
     overflow: hidden;
     position: relative;
@@ -157,47 +188,32 @@ ul.package-list {
 #silver-heading,
 #gold-heading,
 #platinum-heading {
-    width: 280px;
+    width: 200px;
     padding-bottom: 5px;
     position: absolute;
     left: 0;
 }
 
-#silver-heading,
-#silver-btn {
+#silver-heading {
     background: linear-gradient(#eeeeee, silver);
 }
 
-#gold-heading,
-#gold-btn {
+#gold-heading {
     background: linear-gradient(#fcf6ba, #D4AF37);
 }
 
-
-
-#platinum-heading,
-#platinum-btn {
+#platinum-heading {
     background: linear-gradient(#ddd, grey);
 }
 
-#silver-btn,
-#gold-btn,
-#platinum-btn {
-    margin-top: 50px;
-    color: #213c3d;
-}
-
-a.btn.btn-booking {
-    border: #213c3d 1px solid;
-}
-
-a.btn.btn-booking:hover {
-    border: #213c3d 2px solid;
-}
 
 .package-text {
     position: relative;
     top: 50px;
+}
+
+#btn-booking {
+    margin: 0 auto;
 }
 
 /* Games */
