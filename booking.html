@@ -115,7 +115,7 @@
                         <div class="mb-3">
                             <label for="instructions" class="form-label">Delivery and pickup instructions</label>
                             <textarea rows="5" name="instructions" id="instructions" class="form-control"
-                                placeholder="Please use this space to provide delivery instructions, including dates and times for collection and pickup."></textarea>
+                                placeholder="Please use this space to provide delivery instructions, including dates and times for delivery and pickup."></textarea>
                         </div>
                     </fieldset>
 
@@ -188,9 +188,10 @@
                         <div class="mb-3">
                             <p class="mt-4">Please click the button below to read our terms and conditions.</p>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#termsconditions" aria-label="Read terms and conditions">
+                                data-bs-target="#terms-conditions" aria-label="Read terms and conditions">
                                 Terms & conditions
                             </button>
+
                         </div>
 
                         <div class="mb-3">
@@ -209,8 +210,105 @@
 
         </div>
 
+
+
     </section>
     <!-- /.content -->
+
+    <!-- Modal -->
+    <div class="modal" id="terms-conditions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modal-label">Terms and conditions of hire</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>Equipment</h1>
+                    <p>The following items of equipment are included in the hire package (dependent on
+                        package and selected games):</p>
+                    <ul>
+                        <li>Bean Bag Toss (2 wooden boards + 6 bean bags)</li>
+                        <li>Big Game Hunters "Big 4" (Giant 4-in-row game including 4ft high frame + 42 counters)</li>
+                        <li>Big Game Hunters "Full Size Croquet Set" (4 mallets, 4 balls, 6 hoops, 1 winning post)</li>
+                        <li>Big Game Hunters "Giant Hi-Tower" (Giant block stacking game including 58 wooden blocks,
+                            starting height 3ft 6in)</li>
+                        <li>Big Game Hunters "Wooden Boules Set" (8 polished wooden boules, 1 measurer, 1 wooden jack)
+                        </li>
+                        <li>Big Game Hunters "Wooden Garden Skittles" (9 x 23cm skittles + 3 regulation balls)</li>
+                        <li>Ginger Ray Giant Noughts & Crosses (1mx1m rope grid + 10 wooden shapes)</li>
+                        <li>Jacques of London Giant Dominoes (28 black wooden dominoes, each 7 inches in length)</li>
+                        <li>Limbo (2 x 5ft timber frames + pole)</li>
+                        <li>Tin Can Alley (6 tins + 2 bean bags + crate)</li>
+                        <li>Wooden Quoits game (wooden cross, 5 posts, 4 rings)</li>
+                        <li>Wooden chalkboard + pens (customisable chalkboard which can be used as a sign for the lawn
+                            games)</li>
+                    </ul>
+
+                    <h1>Rent and deposit</h1>
+                    <p>The total hire cost is:</p>
+                    <ul>
+                        <li><span class="fw-bold">Platimum package:</span> £150 for 10 games</li>
+                        <li><span class="fw-bold">Gold package:</span> £125 for 8 games</li>
+                        <li><span class="fw-bold">Silver package:</span> £100 for 6 games</li>
+                    </ul>
+                    <p>All packages include wooden chalkboard sign and pens.</p>
+                    <p>Where applicable (within 20 miles of Newport, South
+                        Wales), delivery, set-up and collection will be provided at no extra cost.</p>
+                    <p>An additional £50 damage deposit is also required, which will be refunded at the end of the hire
+                        period provided the
+                        items are returned in good condition.</p>
+                    <p>To secure a booking we require a booking deposit of 50% of the full booking fee, which is
+                        non-refundable in the event of
+                        cancellation by the
+                        Hirer. The remaining balance (remainder of hire fee + £50 damage deposit) must be paid no
+                        later
+                        than 14 days before
+                        the event date.</p>
+
+                    <h1>Loss and damage</h1>
+
+                    <p>The equipment should only be used outdoors in dry conditions, or with sufficient cover to prevent
+                        water damage.</p>
+
+                    <p>In the event of any damage to the equipment (beyond usual wear-and-tear), the Hirer is
+                        responsible for the costs of any
+                        necessary repairs. In the unlikely event of the equipment being lost or damaged beyond repair,
+                        the Hirer is responsible
+                        for the costs of replacing the items as set out below:</p>
+
+                    <ul>
+                        <li>Bean Bag Toss: Wooden board £75 each; Bean bags £2 each</li>
+                        <li>Big Game Hunters "Big 4": Frame £160; Individual counters £3 each</li>
+                        <li>Big Game Hunters "Full Size Croquet Set": Mallet £20 each; Ball £10 each; Hoop £10 each;
+                            Winning post £15</li>
+                        <li>Big Game Hunters "Giant Hi-Tower": £3 per block, up to a maximum of £75</li>
+                        <li>Big Game Hunters "Wooden Boules Set": Boules £5 each; Jack £5; Measurer £5</li>
+                        <li>Big Game Hunters "Wooden Garden Skittles": Skittles £10 each; Balls £5 each</li>
+                        <li>Ginger Ray Giant Noughts & Crosses: £20</li>
+                        <li>Jacques of London Giant Dominoes: £30</li>
+                        <li>Limbo: £110</li>
+                        <li>Tin Can Alley: £20</li>
+                        <li>Wooden chalkboard: £30</li>
+                        <li>Wooden Quoits game: £15</li>
+                    </ul>
+                    <p>For any damages or losses amounting to less than £50, the costs will be taken from the damage
+                        deposit and the remainder
+                        returned to the Hirer. For any damages or losses amounting to more than £50, the Hirer will be
+                        responsible for meeting
+                        the additional costs beyond £50.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+
+
+
 
     <!-- Footer -->
     <footer class="container bg-light border-top">
