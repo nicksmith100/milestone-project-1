@@ -42,8 +42,6 @@ a.btn-primary:hover {
 
 /* Nav */
 
-nav {}
-
 .navbar-img {
     height: 100px;
     float: left;
@@ -91,35 +89,11 @@ nav {}
     border: none;
 }
 
-
-
 /* Primary Image */
 
 .primary-image-container {
     padding: 0;
-    overflow: hidden;
     position: relative;
-    max-height: 250px;
-
-}
-
-.primary-image {
-    width: inherit;
-    padding: 0;
-    object-fit: cover;
-    margin: auto 0;
-}
-
-#hero-image {
-    margin-top: -20px;
-}
-
-#about-image {
-    margin-top: -30px;
-}
-
-#booking-image {
-    margin-top: -120px;
 }
 
 #carousel-quotes {
