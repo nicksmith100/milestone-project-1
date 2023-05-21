@@ -232,10 +232,10 @@ ul.package-list {
 
 /* Footer */
 
-a.footer-icon {
+a.social-link {
     color: #498082;
 }
 
-a.footer-icon:hover {
+a.social-link:hover {
     color: #213c3d;
 }
