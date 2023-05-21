@@ -26,7 +26,7 @@ body {
 
 
 
-a.btn-primary {
+.btn-primary {
 
     color: #fff;
     background: #213c3d;
@@ -35,7 +35,9 @@ a.btn-primary {
 
 }
 
-a.btn-primary:hover {
+
+
+.btn-primary:hover {
     background-color: #498082;
     border: #213c3d 1px solid;
 }
@@ -228,6 +230,12 @@ ul.package-list {
 .games-text li {
     list-style: none;
     font-weight: bold;
+}
+
+/* Form */
+
+input[type=checkbox] {
+    accent-color: #213c3d;
 }
 
 /* Footer */
