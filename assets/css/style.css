@@ -29,14 +29,14 @@ body {
 a.btn-primary {
 
     color: #fff;
-    background: #498082;
+    background: #213c3d;
     margin: 0 auto;
     border: #213c3d 1px solid;
 
 }
 
 a.btn-primary:hover {
-    background-color: #213c3d;
+    background-color: #498082;
     border: #213c3d 1px solid;
 }
 
@@ -58,7 +58,7 @@ a.btn-primary:hover {
 .title,
 .title-comp {
     font-family: 'Desyrel', sans-serif;
-    color: #498082;
+    color: #213c3d;
     margin: auto;
 }
 
@@ -72,12 +72,12 @@ a.btn-primary:hover {
 }
 
 .nav-link {
-    color: #498082;
+    color: #213c3d;
     font-family: 'Desyrel', sans-serif;
 }
 
 .nav-link:hover {
-    color: #213c3d;
+    color: #498082;
 }
 
 .bi-list {
@@ -85,7 +85,7 @@ a.btn-primary:hover {
 }
 
 .navbar-toggler {
-    color: #498082;
+    color: #213c3d;
     border: none;
 }
 
@@ -233,9 +233,9 @@ ul.package-list {
 /* Footer */
 
 a.social-link {
-    color: #498082;
+    color: #213c3d
 }
 
 a.social-link:hover {
-    color: #213c3d;
+    color: #498082;
 }
