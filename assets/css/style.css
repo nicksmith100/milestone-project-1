@@ -63,10 +63,6 @@ body {
     color: #498082;
 }
 
-.bi-list {
-    font-size: 30px;
-}
-
 .navbar-toggler {
     color: #213c3d;
     border: none;
@@ -79,17 +75,19 @@ body {
     position: relative;
 }
 
+/* Quotes Carousel */
+
 #carousel-quotes {
     z-index: 10;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
-    height: 240px;
+    height: 200px;
     top: 50%;
-    margin-top: -120px;
+    margin-top: -100px;
 }
 
 #carousel-quotes .carousel-item {
-    height: 240px;
+    height: 200px;
 }
 
 #carousel-quotes .carousel-caption {
@@ -98,17 +96,51 @@ body {
     bottom: initial;
 }
 
-.quote {
+#carousel-quotes .quote {
     font-size: 14px;
     color: #fff;
     font-style: italic;
     margin-bottom: 6px;
 }
 
-.quote-customer {
+#carousel-quotes .quote-customer {
     font-size: 10px;
     color: #fff;
     margin-bottom: 6px;
+}
+
+/* Quotes Carousel - XL XXL */
+
+#carousel-quotes-xl {
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 360px;
+    top: 50%;
+    margin-top: -180px;
+}
+
+#carousel-quotes-xl .carousel-item {
+    height: 360px;
+}
+
+#carousel-quotes-xl .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+#carousel-quotes-xl .quote {
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+#carousel-quotes-xl .quote-customer {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 12px;
 }
 
 /* Packages */
