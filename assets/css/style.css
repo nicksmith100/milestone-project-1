@@ -12,30 +12,18 @@
 /* General styles */
 
 body {
-    padding-top: 0px;
+    padding-top: 0;
     background: #213c3d;
     color: #213c3d;
     font-family: 'Playfair Display', serif;
     font-weight: 300;
 }
 
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-
 .btn-primary {
-
     color: #fff;
     background: #213c3d;
-    margin: 0 auto;
     border: #213c3d 1px solid;
-
 }
-
-
 
 .btn-primary:hover {
     background-color: #498082;
@@ -46,10 +34,9 @@ body {
 
 .navbar-img {
     height: 100px;
-    float: left;
 }
 
-.navbar-img-sml {
+.navbar-img-sm {
     height: 75px;
 }
 
@@ -61,16 +48,10 @@ body {
 .title-comp {
     font-family: 'Desyrel', sans-serif;
     color: #213c3d;
-    margin: auto;
 }
 
 .title-comp {
     width: 50px;
-    font-size: 28px;
-}
-
-.nav-icon {
-    margin-right: 6px;
 }
 
 .nav-link {
@@ -108,17 +89,13 @@ body {
 }
 
 #carousel-quotes .carousel-item {
-
     height: 240px;
-
 }
-
 
 #carousel-quotes .carousel-caption {
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
-
 }
 
 .quote {
@@ -134,16 +111,6 @@ body {
     margin-bottom: 6px;
 }
 
-/* Content */
-
-.content-title {
-    margin-bottom: 20px;
-}
-
-.content {
-    padding-top: 20px;
-}
-
 /* Packages */
 
 ul.package-list {
@@ -153,21 +120,28 @@ ul.package-list {
 
 .package-box {
     text-align: center;
-    border-radius: 5%;
-    border: 2px #213c3d solid;
     width: 200px;
     height: 250px;
-    margin: 10px auto;
     overflow: hidden;
     position: relative;
-    top: 10px;
+}
+
+#silver-box {
+    border-color: silver !important;
+}
+
+#gold-box {
+    border-color: #D4AF37 !important;
+}
+
+#platinum-box {
+    border-color: rgb(165, 164, 164) !important;
 }
 
 #silver-heading,
 #gold-heading,
 #platinum-heading {
     width: 200px;
-    padding-bottom: 5px;
     position: absolute;
     left: 0;
 }
@@ -181,50 +155,19 @@ ul.package-list {
 }
 
 #platinum-heading {
-    background: linear-gradient(#ddd, grey);
+    background: linear-gradient(#ddd, rgb(165, 164, 164));
 }
-
 
 .package-text {
     position: relative;
     top: 50px;
 }
 
-#btn-booking {
-    margin: 0 auto;
-}
 
 /* Games */
 
-#games {
-    padding-top: 50px;
-}
-
-#tier1,
-#tier2,
-#tier3 {
-    padding: 20px 0;
-}
-
-.games-heading {
-    margin-top: 0px;
-}
-
-.carousel-games img {
-
-    border: #213c3d 1px solid;
-    border-radius: 5%;
-
-}
-
 .carousel-games .carousel-caption {
     background: rgba(0, 0, 0, 0.7);
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.games-text {
-    margin: auto 0;
 }
 
 .games-text li {
