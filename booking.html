@@ -33,203 +33,210 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light container px-3 px-lg-4 border-bottom border-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/block-logo-blank.png" alt="Block game logo"
+                    class="navbar-img d-none d-sm-block">
+                <img src="assets/images/block-logo.png" alt="Block game logo with Smith Lawn Games text"
+                    class="navbar-img-sm d-block d-sm-none">
+            </a>
+            <a class="navbar-title" href="index.html">
+                <h1 class="title navbar-text d-none d-lg-block">Smith Lawn Games</h1>
+                <h1 class="title-comp fs-3 navbar-text d-none d-sm-block d-lg-none">Smith Lawn Games</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDropdown" aria-controls="navbarTogglerDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item mr-2 ms-auto">
+                        <a class="nav-link" aria-current="page" href="index.html"><i
+                                class="bi bi-house-fill nav-icon me-1" aria-hidden="true"></i>Home</a>
+                    </li>
+                    <li class="nav-item mr-2 ms-auto">
+                        <a class="nav-link" href="about.html"><i class="bi bi-people-fill nav-icon me-1"
+                                aria-hidden="true"></i>About</a>
+                    </li>
+                    <li class="nav-item mr-2 ms-auto">
+                        <a class="nav-link" href="booking.html"><i class="bi-calendar-check-fill nav-icon me-1"
+                                aria-hidden="true"></i>Booking</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- /.header -->
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light container px-3 px-lg-4 border-bottom border-3">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/images/block-logo-blank.png" alt="Block game logo" class="navbar-img d-none d-sm-block">
-            <img src="assets/images/block-logo.png" alt="Block game logo with Smith Lawn Games text"
-                class="navbar-img-sm d-block d-sm-none">
-        </a>
-        <a class="navbar-title" href="index.html">
-            <h1 class="title navbar-text d-none d-lg-block">Smith Lawn Games</h1>
-            <h1 class="title-comp fs-3 navbar-text d-none d-sm-block d-lg-none">Smith Lawn Games</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDropdown"
-            aria-controls="navbarTogglerDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-list fs-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDropdown">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
-                <li class="nav-item mr-2 ms-auto">
-                    <a class="nav-link" aria-current="page" href="index.html"><i class="bi bi-house-fill nav-icon me-1"
-                            aria-hidden="true"></i>Home</a>
-                </li>
-                <li class="nav-item mr-2 ms-auto">
-                    <a class="nav-link" href="about.html"><i class="bi bi-people-fill nav-icon me-1"
-                            aria-hidden="true"></i>About</a>
-                </li>
-                <li class="nav-item mr-2 ms-auto">
-                    <a class="nav-link" href="booking.html"><i class="bi-calendar-check-fill nav-icon me-1"
-                            aria-hidden="true"></i>Booking</a>
-                </li>
-            </ul>
+    <!-- Content -->
+    <main>
+        <!-- Primary Image -->
+        <div id="booking-image-container" class="container bg-light primary-image-container border-bottom border-3">
+            <img src="assets/images/booking-image.jpg" alt="Diary and selection of items on a desk"
+                class="img-fluid primary-image" id="booking-image">
         </div>
-    </nav>
-    <!-- /.navigation bar -->
+        <!-- /.primary image -->
 
-    <!-- Primary Image -->
-    <div id="booking-image-container" class="container bg-light primary-image-container border-bottom border-3">
-        <img src="assets/images/booking-image.jpg" alt="Diary and selection of items on a desk"
-            class="img-fluid primary-image" id="booking-image">
-    </div>
-    <!-- /.primary image -->
+        <!-- Booking Form Section -->
+        <section class="content container px-5 py-4 bg-light border-bottom border-3">
 
-    <!-- /Content -->
-    <div class="content container px-5 py-4 bg-light border-bottom border-3">
+            <h2 class="content-title">Booking form</h2>
 
+            <p>Please complete the form below and we'll be in touch to arrange payment and confirm your booking.</p>
 
-        <h2 class="content-title">Booking form</h2>
+            <div class="row">
 
-        <p>Please complete the form below and we'll be in touch to arrange payment and confirm your booking.</p>
+                <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
 
-        <div class="row">
+                    <form action="https://formsubmit.co/smithlawngames@gmail.com" method="post">
 
-            <div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
+                        <fieldset class="mt-4 form-group border p-3">
+                            <legend>
+                                <h3>Your details</h3>
+                            </legend>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" name="name" id="name" class="form-control" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="homeaddress" class="form-label">Home address including postcode</label>
+                                <textarea rows="5" name="homeaddress" id="homeaddress" class="form-control"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input type="tel" name="phone" id="phone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </fieldset>
 
-                <form action="https://formsubmit.co/smithlawngames@gmail.com" method="post">
+                        <fieldset class="mt-4 form-group border p-3">
+                            <legend>
+                                <h3>Event details</h3>
+                            </legend>
+                            <div class="mb-3">
+                                <label for="venuename" class="form-label">Venue</label>
+                                <input type="text" name="venuename" id="venuename" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="venueaddress" class="form-label">Venue address including postcode</label>
+                                <textarea rows="5" name="venueaddress" id="venueaddress" class="form-control"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="eventdate" class="form-label">Event date</label>
+                                <input type="date" name="eventdate" id="eventdate" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="instructions" class="form-label">Delivery and pickup instructions</label>
+                                <textarea rows="5" name="instructions" id="instructions" class="form-control"
+                                    placeholder="Please use this space to provide delivery instructions, including dates and times for delivery and pickup."></textarea>
+                            </div>
+                        </fieldset>
 
-                    <fieldset class="mt-4 form-group border p-3">
-                        <legend>
-                            <h3>Your details</h3>
-                        </legend>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" name="name" id="name" class="form-control" required />
-                        </div>
-                        <div class="mb-3">
-                            <label for="homeaddress" class="form-label">Home address including postcode</label>
-                            <textarea rows="5" name="homeaddress" id="homeaddress" class="form-control"
-                                required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone number</label>
-                            <input type="tel" name="phone" id="phone" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="mt-4 form-group border p-3">
-                        <legend>
-                            <h3>Event details</h3>
-                        </legend>
-                        <div class="mb-3">
-                            <label for="venuename" class="form-label">Venue</label>
-                            <input type="text" name="venuename" id="venuename" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="venueaddress" class="form-label">Venue address including postcode</label>
-                            <textarea rows="5" name="venueaddress" id="venueaddress" class="form-control"
-                                required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="eventdate" class="form-label">Event date</label>
-                            <input type="date" name="eventdate" id="eventdate" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="instructions" class="form-label">Delivery and pickup instructions</label>
-                            <textarea rows="5" name="instructions" id="instructions" class="form-control"
-                                placeholder="Please use this space to provide delivery instructions, including dates and times for delivery and pickup."></textarea>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="mt-4 form-group border p-3">
-                        <legend>
-                            <h3>Games selection</h3>
-                        </legend>
-                        <div class="mb-3">
-                            <label for="package" class="form-label">Which games package do you require?</label>
-                            <select class="form-select" id="package" name="package" aria-label="Games package selection"
-                                required>
-                                <option selected>Please select</option>
-                                <option value="Silver">Silver (6 games for £100)</option>
-                                <option value="Gold">Gold (8 games for £125)</option>
-                                <option value="Platinum">Platinum (10 games for £150)</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <p><span class=fw-bold>Platinum</span> package includes all games. For <span
-                                    class=fw-bold>Silver</span> or <span class=fw-bold>Gold</span> packages, please
-                                select the required games below.</p>
-                        </div>
-                        <div class="mb-3">
-                            <div class="row px-1">
-                                <div class="col12 col-sm-4 p-2 mx-auto">
-                                    <h4>Tier 1 games</h4>
-                                    <p><span class="fw-bold">Silver package:</span> Select 2<br>
-                                        <span class="fw-bold">Gold package:</span> Select 3
-                                    </p>
-                                    <input type="checkbox" name="tier1-game" value="4-in-a-row" id="4-in-a-row-check">
-                                    <label for="4-in-a-row-check" class="form-label">4-in-a-Row</label><br>
-                                    <input type="checkbox" name="tier1-game" value="blocktower" id="blocktower-check">
-                                    <label for="blocktower-check" class="form-label">Block Tower</label><br>
-                                    <input type="checkbox" name="tier1-game" value="limbo" id="limbo-check">
-                                    <label for="limbo-check" class="form-label">Limbo</label><br>
-                                    <input type="checkbox" name="tier1-game" value="croquet" id="croquet-check">
-                                    <label for="croquet-check" class="form-label">Croquet</label><br>
-                                </div>
-                                <div class="col12 col-sm-4 p-2 mx-auto">
-                                    <h4>Tier 2 games</h4>
-                                    <p><span class="fw-bold">Silver package:</span> Select 2<br>
-                                        <span class="fw-bold">Gold package:</span> Select 2
-                                    </p>
-                                    <input type="checkbox" name="tier2-game" value="skittles" id="skittles-check">
-                                    <label for="skittles-check" class="form-label">Skittles</label><br>
-                                    <input type="checkbox" name="tier2-game" value="boules" id="boules-check">
-                                    <label for="boules-check" class="form-label">Boules</label><br>
-                                    <input type="checkbox" name="tier2-game" value="tincanalley" id="tincanalley-check">
-                                    <label for="tincanalley-check" class="form-label">Tin Can Alley</label><br>
-                                </div>
-                                <div class="col12 col-sm-4 p-2 mx-auto">
-                                    <h4>Tier 3 games</h4>
-                                    <p>All 3 games includes with all packages</p>
-                                    <input type="checkbox" name="tier3-game" value="dominoes" id="dominoes-check"
-                                        checked>
-                                    <label for="dominoes-check" class="form-label">Dominoes</label><br>
-                                    <input type="checkbox" name="tier3-game" value="xo" id="xo-check" checked>
-                                    <label for="xo-check" class="form-label">Noughts & Crosses</label><br>
-                                    <input type="checkbox" name="tier3-game" value="quoits" id="quoits-check" checked>
-                                    <label for="quoits-check" class="form-label">Quoits</label><br>
+                        <fieldset class="mt-4 form-group border p-3">
+                            <legend>
+                                <h3>Games selection</h3>
+                            </legend>
+                            <div class="mb-3">
+                                <label for="package" class="form-label">Which games package do you require?</label>
+                                <select class="form-select" id="package" name="package"
+                                    aria-label="Games package selection" required>
+                                    <option selected>Please select</option>
+                                    <option value="Silver">Silver (6 games for £100)</option>
+                                    <option value="Gold">Gold (8 games for £125)</option>
+                                    <option value="Platinum">Platinum (10 games for £150)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <p><span class=fw-bold>Platinum</span> package includes all games. For <span
+                                        class=fw-bold>Silver</span> or <span class=fw-bold>Gold</span> packages, please
+                                    select the required games below.</p>
+                            </div>
+                            <div class="mb-3">
+                                <div class="row px-1">
+                                    <div class="col12 col-sm-4 p-2 mx-auto">
+                                        <h4>Tier 1 games</h4>
+                                        <p><span class="fw-bold">Silver package:</span> Select 2<br>
+                                            <span class="fw-bold">Gold package:</span> Select 3
+                                        </p>
+                                        <input type="checkbox" name="tier1-game" value="4-in-a-row"
+                                            id="4-in-a-row-check">
+                                        <label for="4-in-a-row-check" class="form-label">4-in-a-Row</label><br>
+                                        <input type="checkbox" name="tier1-game" value="blocktower"
+                                            id="blocktower-check">
+                                        <label for="blocktower-check" class="form-label">Block Tower</label><br>
+                                        <input type="checkbox" name="tier1-game" value="limbo" id="limbo-check">
+                                        <label for="limbo-check" class="form-label">Limbo</label><br>
+                                        <input type="checkbox" name="tier1-game" value="croquet" id="croquet-check">
+                                        <label for="croquet-check" class="form-label">Croquet</label><br>
+                                    </div>
+                                    <div class="col12 col-sm-4 p-2 mx-auto">
+                                        <h4>Tier 2 games</h4>
+                                        <p><span class="fw-bold">Silver package:</span> Select 2<br>
+                                            <span class="fw-bold">Gold package:</span> Select 2
+                                        </p>
+                                        <input type="checkbox" name="tier2-game" value="skittles" id="skittles-check">
+                                        <label for="skittles-check" class="form-label">Skittles</label><br>
+                                        <input type="checkbox" name="tier2-game" value="boules" id="boules-check">
+                                        <label for="boules-check" class="form-label">Boules</label><br>
+                                        <input type="checkbox" name="tier2-game" value="tincanalley"
+                                            id="tincanalley-check">
+                                        <label for="tincanalley-check" class="form-label">Tin Can Alley</label><br>
+                                    </div>
+                                    <div class="col12 col-sm-4 p-2 mx-auto">
+                                        <h4>Tier 3 games</h4>
+                                        <p>All 3 games includes with all packages</p>
+                                        <input type="checkbox" name="tier3-game" value="dominoes" id="dominoes-check"
+                                            checked>
+                                        <label for="dominoes-check" class="form-label">Dominoes</label><br>
+                                        <input type="checkbox" name="tier3-game" value="xo" id="xo-check" checked>
+                                        <label for="xo-check" class="form-label">Noughts & Crosses</label><br>
+                                        <input type="checkbox" name="tier3-game" value="quoits" id="quoits-check"
+                                            checked>
+                                        <label for="quoits-check" class="form-label">Quoits</label><br>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </fieldset>
+                        </fieldset>
 
-                    <fieldset class="my-4 form-group border p-3">
-                        <legend>
-                            <h3>Confirmation</h3>
-                        </legend>
-                        <div class="mb-3">
-                            <p class="mt-4">Please click the button below to read our terms and conditions.</p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#terms-conditions" aria-label="Read terms and conditions">
-                                Terms & conditions
-                            </button>
+                        <fieldset class="my-4 form-group border p-3">
+                            <legend>
+                                <h3>Confirmation</h3>
+                            </legend>
+                            <div class="mb-3">
+                                <p class="mt-4">Please click the button below to read our terms and conditions.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#terms-conditions" aria-label="Read terms and conditions">
+                                    Terms & conditions
+                                </button>
 
-                        </div>
+                            </div>
 
-                        <div class="mb-3">
-                            <p class="mt-4">Please confirm that you agree with our terms and conditions.</p>
-                            <label for="checkbox" class="form-check-label">I agree</label>
-                            <input type="checkbox" id="checkbox" required>
-                        </div>
-                        <div class="mb-3 mt-5">
-                            <button type="submit" class="btn btn-primary" aria-label="Submit form">Submit</button>
-                        </div>
-                    </fieldset>
+                            <div class="mb-3">
+                                <p class="mt-4">Please confirm that you agree with our terms and conditions.</p>
+                                <label for="checkbox" class="form-check-label">I agree</label>
+                                <input type="checkbox" id="checkbox" required>
+                            </div>
+                            <div class="mb-3 mt-5">
+                                <button type="submit" class="btn btn-primary" aria-label="Submit form">Submit</button>
+                            </div>
+                        </fieldset>
 
-                </form>
+                    </form>
+
+                </div>
 
             </div>
-
-        </div>
-
-
-
-    </div>
+        </section>
+        <!-- /.booking form section -->
+    </main>
     <!-- /.content -->
 
     <!-- Modal -->
@@ -324,9 +331,6 @@
     </div>
     <!-- /.modal -->
 
-
-
-
     <!-- Footer -->
     <footer class="container px-3 px-lg-4 bg-light">
         <ul class="nav list-unstyled py-2">
@@ -348,13 +352,10 @@
     <!-- /.footer -->
 
     <!-- Scripts -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-
     <!-- /.scripts -->
-
 
 </body>
 
