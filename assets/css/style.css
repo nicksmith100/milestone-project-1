@@ -23,6 +23,9 @@ body {
     color: #fff;
     background: #213c3d;
     border: #213c3d 1px solid;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 }
 
 .btn-primary:hover {
@@ -57,6 +60,9 @@ body {
 .nav-link {
     color: #213c3d;
     font-family: 'Desyrel', sans-serif;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 }
 
 .nav-link:hover {
@@ -216,7 +222,10 @@ input[type=checkbox] {
 /* Footer */
 
 a.social-link {
-    color: #213c3d
+    color: #213c3d;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 }
 
 a.social-link:hover {
