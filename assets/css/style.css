@@ -83,6 +83,23 @@ body {
     position: relative;
 }
 
+/* Fade-in effect from: https://blog.hubspot.com/website/css-fade-in */
+
+.primary-image {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 /* Quotes Carousel */
 
 #carousel-quotes {
