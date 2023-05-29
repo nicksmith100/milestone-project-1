@@ -28,7 +28,9 @@ body {
     -webkit-transition: all .3s ease-in-out;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
     background-color: #498082;
     border: #213c3d 1px solid;
 }
