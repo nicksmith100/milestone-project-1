@@ -23,6 +23,7 @@ body {
     color: #fff;
     background: #213c3d;
     border: #213c3d 1px solid;
+    /* Code for ease-in-out effect from Code Institute: https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/tree/master/07-adding-hover-css */
     transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
