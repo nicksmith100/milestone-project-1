@@ -19,6 +19,10 @@ body {
     font-weight: 300;
 }
 
+h2 {
+    font-weight: 600;
+}
+
 .btn-primary {
     color: #fff;
     background: #213c3d;
