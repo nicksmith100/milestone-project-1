@@ -30,7 +30,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
 - #### Business Goals
 
-  - As a business, we want to:
+  - As a **Business**, we want to:
 
     1. Increase the reach of the company beyond social media platforms
     2. Demonstrate legitimacy, professionalsim and trust
@@ -50,7 +50,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
     ![Mobile wireframes](readme_images/mobile_wireframes.png)
 
-  - Only desktop and mobile wireframes were created, the expectation being that tablets in landscape mode would adopt the desktop layout, while tablets in portrait mode would adopt the mobil layout. In reality, the use of [Bootstrap's grid system](https://getbootstrap.com/docs/5.3/layout/grid/) means that the layout is more responsive, providing various layouts at different device breakpoints (more on this below). Nevertheless, the wireframes provided a useful basis for the overall structure of the site.
+  - Only desktop and mobile wireframes were created, the expectation being that tablets in landscape mode would adopt the desktop layout, while tablets in portrait mode would adopt the mobil layout. In reality, the use of [Bootstrap's grid system](https://getbootstrap.com/docs/5.3/layout/grid/) means that the layout is more responsive, providing various layouts at different device breakpoints (more on this in the **Layout and Styling** section below). Nevertheless, the wireframes provided a useful reference to keep the overall layout of the site on track.
 
   - While the overall structure of the site stays true to the wireframes, there are some notable differences in the final page designs which came about for both business and UX reasons:
 
@@ -73,7 +73,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
   - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of components on certain devices. This is used in particular:
     -  In the header, where the separate logo and title are replaced by a combined image and text logo on xs devices (<576px).
-    -  In the quotes box overlaid on the hero image on the main page, where a separate carousel with larger font-size is provided for xl devices and above (≥1200px). (This was one area where Bootstrap's native responsive styling didn't seem to assist - see [Bugs section](#bugs) below.
+    -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on xs devices (<576px), and a separate carousel with larger font-size is provided for xl devices and above (≥1200px). (The text size for the quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.
 
 - #### Colour Scheme
 
@@ -87,7 +87,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
   - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On smaller devices an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
   
-    ![Main logo](readme_images/block_logo_blank.png) ![Logo with text](readme_images/block_logo.png)
+    ![Main logo](readme_images/block_logo_blank_rm.png) ![Logo with text](readme_images/block_logo_rm.png)
 
   - The **hero image** on the main page is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
 
@@ -125,11 +125,26 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   
   - Icons are utilised in the header for navigation list items and for the "hamburger" button on smaller devices, and in the footer for social media links.
 
+- #### Favicon
+
+  - As a favicon, the site uses a simple "S" in the Desyrel font, using the dark green colour against a white background. This proved more effective than trying to use the main logo as a favicon, as the detail of it was lost at such a small size.
+  
+  - The favicon was generated using [favicon-generator.org](https://www.favicon-generator.org/).
+
 ## Features
 
-- Responsive on all device sizes
+### Scope
 
-- Interactive elements
+- #### Minimum Viable Product
+- #### Additional Features (in scope)
+- #### Future Ideas (not currently in scope)
+
+### Page Elements
+
+- #### All pages
+- #### Home page
+- #### About page
+- #### Booking page
 
 ## Technologies Used
 
