@@ -71,7 +71,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
     | Extra large       | xl          | ≥1200px    |
     | Extra extra large | xxl         | ≥1400px    |
   
-  - In addition, the site uses the following specific components from the Boostrap library:
+  - In addition, the site uses the following specific components from the Bootstrap library:
     - The header utilies Bootstrap's [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/), collapsing to a hamburger menu on xs viewports.
     - The homepage utilises Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) for the customer quotes overlaid on the hero image, and for the image galleries of the games.
     - The booking page utilises Bootstrap's [Form classes](https://getbootstrap.com/docs/5.3/forms/overview/).
