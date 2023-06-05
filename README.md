@@ -97,11 +97,15 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   
     ![Main logo](readme_images/block_logo_blank_rm.png) ![Logo with text](readme_images/block_logo_rm.png)
 
-  - The **hero image** on the main page is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
+  - The **hero image** on the homepage is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
 
-  - The main image on the "about" page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings, who are expected to make up the majority of potential customers.
+  - The primary image on the About page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings, who are expected to make up the majority of potential customers.
 
-  - The main image on the "booking" page is a notebook surrounded by miscellaneous items, including a pink rose. This ties in with the flowers from the "about" image, providing a link to the company story given on the "about" page.
+  - The primary image on the Booking page is a notebook surrounded by miscellaneous items, including a pink rose. This ties in with the flowers from the About image, providing a link to the company story given on the About page.
+  
+  - The primary image on the 404 page is an apparently empty cornfield, complementing the accompanying text which is headed "There's nothing here".
+  
+  - The hero image and all other primary images fade in for stylistic effect.
 
 - #### Typography
 
@@ -173,72 +177,97 @@ The website includes the following page elements, in line with the scope outline
 - #### All pages
 
   - ##### Header
-    
-    ![Website header](readme_images/header.png)
-    ![Website header - medium](readme_images/header_md.png)
-    ![Website header - collapsed](readme_images/header_collapsed.png)
-    
+         
     - All pages include a header with branding on the left-hand side and a navigation menu on the right-hand side. The header is fully responsive:
       - The title and logo are displayed as a single image on xs viewports.
       - On sm and md viewports, the logo and title are displayed separately with the title being stacked in three lines, while on lg viewports and above, the title displays as a single line.
       - The navigation menu collapses to a hamburger menu on xs viewports, but is otherwise displayed as a single line.
+     
+     - Desktop header
+      
+      ![Website header](readme_images/header.png)
+    
+    - Tablet header
+      
+      ![Website header - medium](readme_images/header_md.png)
+    
+    - Mobile header
+      
+      ![Website header - collapsed](readme_images/header_collapsed.png)
     
   - ##### Primary image
-  
+          
     - All pages include a primary image relevant to the content of the page. The image uses [Bootstrap's .img-fluid class](https://getbootstrap.com/docs/5.3/content/images/#responsive-images) to ensure it is fully responsive, stretching across the full width of the viewport for xs viewports, or the full width of the container on sm viewports and above.
     
-    ![Primary image desktop example - About page](readme_images/primary_image_about.png)
-    ![Primary image mobile example - About page](readme_images/primary_image_about_xs.png)
-            
+    - Primary image - desktop
+      
+      ![Primary image desktop example - About page](readme_images/primary_image_about.png)
+      
+    - Primary image - mobile
+      
+      ![Primary image mobile example - About page](readme_images/primary_image_about_xs.png)
+                
   - ##### Footer
+       
+    - All pages include a footer with three equally spaced and centred social media icons, linking to Instagram, Facebook and Whatsapp. The icons utilise automatic margins so that their spacing is reponsive to the viewport size. 
     
-    ![Website footer - desktop](readme_images/footer_desktop.png)
-    ![Website footer - mobile](readme_images/footer_xs.png)
-    
-    - All pages include a footer with three equally spaced and centred social media icons, linking to Instagram, Facebook and Whatsapp. The icons utilise automatic margins so that their spacing is reponsive to the viewport size.  
+    - Desktop footer
+      
+      ![Website footer - desktop](readme_images/footer_desktop.png)
+      
+    - Mobile footer
+      
+      ![Website footer - mobile](readme_images/footer_xs.png) 
 
   - #### Homepage
 
-    - The primary image on the homepage is overlaid with a box on the right-hand side which provides quotes from previous customers on rotation, utilising Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component. The quotes box disappears at the xs breakpoint to avoid it dominating the primary image.
+    - The primary image on the homepage is overlaid with a box on the right-hand side which provides quotes from previous customers on rotation, utilising Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component.
       
       ![Homepage primary image with quote box - desktop](readme_images/homepage_primary_quotes.png)
+      
+    - The quotes box disappears at the xs breakpoint to avoid it dominating the primary image.
+      
       ![Homepage primary image - mobile](readme_images/homepage_primary_xs.png)
       
     - The main content of the homepage comprises two distinct sections:
       
       - A section outlining the hire packages on offer, each package including a specific number of games from each tier.
       
+        ![Homepage packages section - desktop](readme_images/packages_desktop.png)
+        
+        ![Homepage packages section - mobile](readme_images/packages_xs.png)
+              
       - A section illustrating the games in each tier, including an image gallery for each tier using Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component, and a list of games along with descriptions. The captions for the gallery fade out after 2 seconds to avoid them dominating the images.
-      
-      - Both sections utilise the [Grid system](https://getbootstrap.com/docs/5.3/layout/grid/), ensuring that the content adjusts according to viewport size.
-      
-      ![Homepage packages section - desktop](readme_images/packages_desktop.png)
-      ![Homepage packages section - mobile](readme_images/packages_xs.png)
-      ![Homepage games section - desktop](readme_images/games_desktop.png)
-      ![Homepage games section - mobile](readme_images/games_xs.png)
+        
+        ![Homepage games section - desktop](readme_images/games_desktop.png)
+        
+        ![Homepage games section - mobile](readme_images/games_xs.png)
+       
+      - Both sections utilise Bootstrap's [Grid system](https://getbootstrap.com/docs/5.3/layout/grid/), ensuring that the content adjusts according to viewport size.
       
   - #### About page
-    - The About page is the simplest of all the pages with no particular special features. It includes as its primary image a photograph of the owners of the company during their own wedding celebrations, accompanied by the story of how the company began.
-    
-      ![About page - desktop](readme_images/about_desktop.png)
-          
-  - #### Booking page
-    - The Booking page includes a booking form which allows customers to provide their contact details, event details, the package they wish to book and their selected games, and to submit these details to the company.
-    - The form is arranged into sections for ease of understanding, and includes required fields which will prevent the form from being submitted unless they are completed.
       
+      ![About page - desktop](readme_images/about_desktop.png)
+    
+    - The About page is the simplest of all the pages with no particular special features. It includes as its primary image a photograph of the owners of the company during their own wedding celebrations, accompanied by the story of how the company began.
+                    
+  - #### Booking page
+  
       ![Booking form - desktop](readme_images/booking_desktop.png)
-            
+    
+    - The Booking page includes a booking form which allows customers to provide their contact details, event details, the package they wish to book and their selected games, and to submit these details to the company.
+    - The form is arranged into sections for ease of understanding, and includes required fields which will prevent the form from being submitted unless they are completed.          
     - The form includes a modal to display booking terms and conditions at the press of a button, utilising Bootstrap's [Modal plugin](https://getbootstrap.com/docs/5.3/components/modal/).
       
-      ![Booking page - modal](readme_images/booking_modal.png)
+      ![Booking page - modal](readme_images/modal.png)
 
 ## Technologies Used
 
 ### Languages
-- [HTML](w3.org/standards/webdesign/htmlcss)
-  - Used for page markup.
-- [CSS](w3.org/standards/webdesign/htmlcss)
-  - Used for styling.
+- [HTML](https://html.spec.whatwg.org/multipage/)
+  - Standard markup language for web pages.
+- [CSS](https://www.w3.org/Style/CSS/)
+  - Used to add style to HTML.
 
 ### Frameworks
 - [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
@@ -246,95 +275,46 @@ The website includes the following page elements, in line with the scope outline
 
 ### Libraries
 - [Google Fonts](https://fonts.google.com)
-  - Used for font styles.
+  - Used for importing Playfair Display font.
+- [Dafont](https://dafont.com/)
+  - Used to download Desyrel font. 
 - [Bootstrap icons](https://icons.getbootstrap.com/)
   - Used for icons.
 
 ### Platforms
 - [Github](https://github.com/)
-    - Storing code remotely and deployment.
+  - Used to store code remotely and for deployment.
 - [CodeAnywhere](https://app.codeanywhere.com/)
-    - IDE for project development.
+  - IDE used for project development.
 
 ### Other Tools
 - [Figma](https://www.figma.com/)
-    - Used to create wireframes.
-- [Favicon Generator](https://www.favicon-generator.org/)
-    - Used to create the website favicon.
-- [Am I Responsive](https://ui.dev/amiresponsive)
-    - Used to create montage of different devices displaying the site.
+  - Used to create wireframes.
 - [Coolors](https://coolors.co/)
-    - Used to create colour palette.
+  - Used to create colour palette.
+- [Transfonter](https://transfonter.org/)
+  - Used to convert TrueType font to @font-face 
+- [Favicon Generator](https://www.favicon-generator.org/)
+  - Used to create the website favicon.
+- [Am I Responsive](https://ui.dev/amiresponsive)
+  - Used to create montage of different devices displaying the site.
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+### Validation
 
-- [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+- [W3C Markup Validator](https://validator.w3.org/) returns no errors against any of the pages. (It does, however, return a minor warning against the booking.html page - see **Known Bugs** section.)
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) returns no errors or warnings.
 
-### Testing User Stories from User Experience (UX) Section
+### Manual Testing
 
-- #### First Time Visitor Goals
-
-  1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-
-     1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-     2. The main points are made immediately with the hero image
-     3. The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
-
-  2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
-
-     1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-     2. At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-     3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
-
-  3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-     1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-     2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-     3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
-
-- #### Returning Visitor Goals
-
-  1. As a Returning Visitor, I want to find the new programming challenges or hackathons.
-
-     1. These are clearly shown in the banner message.
-     2. They will be directed to a page with another hero image and call to action.
-
-  2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-
-     1. The navigation bar clearly highlights the "Contact Us" Page.
-     2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-     3. The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
-     4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-     5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
-
-  3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-     1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-     2. Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-     3. If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
-
-- #### Frequent User Goals
-
-  1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-
-     1. The user would already be comfortable with the website layout and can easily click the banner message.
-
-  2. As a Frequent User, I want to check to see if there are any new blog posts.
-
-     1. The user would already be comfortable with the website layout and can easily click the blog link
-
-  3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-     1. At the bottom of every page their is a footer which content is consistent throughout all pages.
-     2. To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-     3. There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
-
-### Further Testing
-
-- The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+- The Website was fully tested on the following browsers and devices, checking that all features and links worked correctly:
+  - Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 - A large amount of testing was done to ensure that all pages were linking correctly.
-- Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+- Friends and family members reviewed the site to highlight any bugs and/or user experience issues.
+
+### Fixed
 
 ### Known Bugs
 
@@ -403,8 +383,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Content
 
 - All content was written by the developer.
-
-- Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
 
 ### Media
 
