@@ -2,11 +2,11 @@
 
 ![Smith Lawn Games logo](readme_images/readme_logo.png)
 
-[View the live project here.](https://nicksmith100.github.io/milestone-project-1/)
+[View the live project here](https://nicksmith100.github.io/milestone-project-1/)
 
 This project creates a marketing website for Smith Lawn Games, a real company which offers lawn games for hire for weddings and other events. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential customers.
 
-![Smith Lawn Games website displayed on various devices](readme_images/responsive_homepage.png)
+![Smith Lawn Games website displayed on various devices](readme_images/responsive_screens.png)
 
 ## Table of Contents
 
@@ -14,76 +14,86 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
 ### Goals
 
-#### Visitor Goals
+- #### Visitor Goals
 
-- ##### First Time Visitor Goals
+  - As a **First Time Visitor**, I want to:
 
-  As a First Time Visitor, I want to:
+    1. Find out what services the company offers and at what price
+    2. Find the company's social media links to ensure that the company is trustworthy and has a good reputation
+    3. Easily navigate throughout the site to find the information I need
 
-  1. Find out what services the company offers and at what price
-  2. Find the company's social media links to ensure that the company is trustworthy and has a good reputation
-  3. Easily navigate throughout the site to find the information I need
+  - As a **Returning Visitor**, I want to:
 
-- ##### Returning Visitor Goals
+    1. Find detailed information about the services offered, including terms and conditions
+    2. Learn more about the background of the company
+    3. Make a booking
 
-  As a Returning Visitor, I want to:
+- #### Business Goals
 
-  1. Find detailed information about the services offered, including terms and conditions
-  2. Learn more about the background of the company
-  3. Make a booking
+  - As a business, we want to:
 
-#### Business Goals
-
-The goals of the business are to:
-
-1. Increase the reach of the company beyond social media platforms
-2. Demonstrate legitimacy, professionalsim and trust
-3. Attract bookings
+  1. Increase the reach of the company beyond social media platforms
+  2. Demonstrate legitimacy, professionalsim and trust
+  3. Attract bookings
 
 ### Design
 
-#### Colour Scheme
+- #### Colour Scheme
 
-![Website colour scheme palette](readme_images/palette.png)
+  ![Website colour scheme palette](readme_images/palette.png)
 
-The main colour used for text, logos and buttons is dark green (#213C3D), on an off-white (#F8F9FA) background. The dark green is also used for the main background on larger devices, sitting either side of a container. Buttons and links change to a lighter green (#498082) when hovered over, with an "ease in" effect.
+  - The main colour used for text, logos and buttons is dark green (#213C3D), on an off-white (#F8F9FA) background. The dark green is also used for the main background on larger devices, sitting either side of an off-white container. Buttons and links transition to a lighter green (#498082) when hovered over.
 
-The dark green colour is chosen to represent grass, while the light background is typical of websites for companies which cater to the wedding industry. The light green colour for the hover effect is chosen to complement the main dark green.
+  - The dark green colour is chosen to represent grass, while the off-white background is typical of websites for companies which cater to the wedding industry. The light green colour for the hover effect is chosen to complement the main dark green.
 
-#### Typography
+- #### Typography
 
-![Desyrel font shown in website header](readme_images/header_font.png)
+  - ##### Title and navigation
 
-The font used for the heading and navigation links is Desyrel, with Sans Serif as the fallback font.
+    ![Desyrel font shown in website header](readme_images/header_font.png)
 
-Desyrel is a playful but stylish script font which reflects that the purpose of the company is to provide fun games. The Desyrel font was downloaded from [Dafont](https://www.dafont.com/desyrel.font) as a TrueType font and converted to @font-face using [Transfonter](https://transfonter.org/).
+    - The font used for the title and navigation links is Desyrel, with Sans Serif as the fallback font.
 
-![Playfair Display font shown on "About" page](readme_images/main_font.png)
+    - Desyrel is a playful but stylish script font which reflects that the purpose of the company is to provide fun games.
 
-The font used throughout the rest of the site is Playfair Display, with Serif as the fallback font.
+    - The Desyrel font was downloaded from [Dafont](https://www.dafont.com/desyrel.font) as a TrueType font and converted to @font-face using [Transfonter](https://transfonter.org/).
 
-Playfair Display is a classy, stylish serif font which complements the playfulness of the heading font, demonstrating the professionalism of the company. Playfair Display is imported from [Google Fonts](https://fonts.google.com/specimen/Playfair+Display).
+  - ##### Other headings and text
+
+    ![Playfair Display font shown on "About" page](readme_images/main_font.png)
+
+    - The font used throughout the rest of the site is Playfair Display, with Serif as the fallback font.
+
+    - Playfair Display is a classy, stylish serif font which complements the playfulness of the heading font, demonstrating the professionalism of the company.
+
+    - Playfair Display is imported from [Google Fonts](https://fonts.google.com/specimen/Playfair+Display).
 
 #### Imagery
 
-  - The logo is a stylised image of a Jenga-style block game, one of the most recognised lawn games.
-  - The hero image on the main page showcases one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
-  - The main image on the "about" page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings who will make up the majority of potential customers.
-  - The main image on the "booking" page is a notebook surrounded by miscellaneous items including a pink rose. This ties in with the flowers from the "about" image, providing a link to the company story given on the "about" page.
+- The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On smaller devices an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
+
+- The **hero image** on the main page is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
+
+- The main image on the "about" page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings, who are expected to make up the majority of potential customers.
+
+- The main image on the "booking" page is a notebook surrounded by miscellaneous items, including a pink rose. This ties in with the flowers from the "about" image, providing a link to the company story given on the "about" page.
 
 #### Wireframes
 
-  - Desktop/Tablet Wireframes
-  
-    ![Desktop/Tablet wireframes](readme_images/desktop_tablet_wireframes.png)
-    
-    
+There are some notable differences between the wireframes and the final page designs:
 
-  - Mobile Wireframes
-    
-    ![Mobile wireframes](readme_images/mobile_wireframes.png)
+- Rather than offering packages of specific games, the company decided to offer packages which would provide customers with more control over the games selection. Therefore, on the homepage, the different packages are displayed in stylised boxes with a description (similar to Monopoly cards), which weren't included in the original wireframes. The games are then arranged in different "tiers", each tier including a slideshow of images and description of the games - akin to the intended layout of the packages as shown in the wireframes.
+- Since the company only has limited photos of the games, and these are already in use on the homepage, a separate gallery page would not have added any value. Therefore the gallery page does not feature in the final design, but may be added once the company has more photos of the games in use during events.
 
+- A "Booking" link was added to the navigation menu, and the "Book Now" button was moved from the header into the main content section on the homepage. These both link to the booking page, but the button acts as a "call to action" on the homepage, appearing alongisde the packages.
 
+Desktop Wireframes (also applicable to tablet in landscape mode)
+
+![Desktop/Tablet wireframes](readme_images/desktop_tablet_wireframes.png)
+
+Mobile Wireframes (also applicable to tablet in portrait mode)
+
+![Mobile wireframes](readme_images/mobile_wireframes.png)
 
 ## Features
 
