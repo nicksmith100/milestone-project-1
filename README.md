@@ -79,13 +79,15 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
   ![Website colour scheme palette](readme_images/palette.png)
 
-  - The main colour used for text, logos and buttons is dark green (#213C3D), on an off-white (#F8F9FA) background. The dark green is also used for the main background on larger devices, sitting either side of an off-white container. Buttons and links transition to a lighter green (#498082) when hovered over.
+  - The site is set on an off-white (#F8F9FA) background, while the main colour used for text, logos and buttons is dark green (#213C3D). On larger devices the off-white background is set within a container on a background of the same dark green. Buttons and links transition to a lighter green (#498082) when hovered over.
 
   - The dark green colour is chosen to represent grass, while the off-white background is typical of websites for companies which cater to the wedding industry. The light green colour for the hover effect is chosen to complement the main dark green.
 
 - #### Imagery
 
   - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On smaller devices an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
+  
+    ![Main logo](readme_images/block_logo_blank.png) ![Logo with text](readme_images/block_logo.png)
 
   - The **hero image** on the main page is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
 
