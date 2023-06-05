@@ -32,9 +32,9 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
   - As a business, we want to:
 
-  1. Increase the reach of the company beyond social media platforms
-  2. Demonstrate legitimacy, professionalsim and trust
-  3. Attract bookings
+    1. Increase the reach of the company beyond social media platforms
+    2. Demonstrate legitimacy, professionalsim and trust
+    3. Attract bookings
 
 ### Design
 
@@ -77,6 +77,12 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   - The main image on the "about" page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings, who are expected to make up the majority of potential customers.
 
   - The main image on the "booking" page is a notebook surrounded by miscellaneous items, including a pink rose. This ties in with the flowers from the "about" image, providing a link to the company story given on the "about" page.
+
+- #### Icons
+
+  - Icons are taken from the [Bootstrap Icons](https://icons.getbootstrap.com/) library and are utilised as classes in the `<i>` tag.
+  - The icons inherit their styling from the anchor and list tags within which they are contained, for example inheriting font-size, color and hover effect.
+  - Icons are utilised in the header for navigation list items and for the "hamburger" button on smaller devices, and in the footer for social media links.
 
 - #### Wireframes
 
