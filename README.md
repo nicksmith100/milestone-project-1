@@ -62,30 +62,39 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
 - #### Layout and Styling
 
-  - The site uses the [Bootstrap 5.3 grid system](https://getbootstrap.com/docs/5.3/layout/grid/) to ensure it is fully responsive on all device sizes.
+  - The site uses the [Bootstrap 5.3 grid system](https://getbootstrap.com/docs/5.3/layout/grid/) to ensure it is fully responsive on all device and viewport sizes. Bootstrap 5.3 uses the following breakpoints which are referenced throughout the rest of this document:
+    
+    | Breakpoint        | Shorthand   | Dimensions |
+    |-------------------|-------------|------------|
+    | Extra small       | xs          | <576px     |
+    | Small             | sm          | ≥576px     |
+    | Medium            | md          | ≥768px     |
+    | Large             | lg          | ≥992px     |
+    | Extra large       | xl          | ≥1200px    |
+    | Extra extra large | xxl         | ≥1400px    |
   
   - In addition, the site uses the following specific components from the Boostrap library:
-    - The header utilies Bootstrap's [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/), collapsing to a hamburger menu on smaller devices.
+    - The header utilies Bootstrap's [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/), collapsing to a hamburger menu on xs viewports.
     - The homepage utilises Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) for the customer quotes overlaid on the hero image, and for the image galleries of the games.
     - The booking page utilises Bootstrap's [Form classes](https://getbootstrap.com/docs/5.3/forms/overview/).  
   
   - In the early stages of development I was overriding Bootstrap styles, e.g. to provide custom padding, margins and font-size in pixels. However, as I became more familiar with the Bootstrap toolkit I opted to use its utility classes for [spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/) and [typography](https://getbootstrap.com/docs/5.3/content/typography/), ensuring the layout and font are appropriate to the device in use. 
 
-  - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of some components on certain devices. This is used in particular:
-    -  In the header, where the separate logo and title are replaced by a combined image and text logo on extra small devices (<576px).
-    -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on extra small devices (<576px), and a separate carousel with larger font-size is provided for extra large devices and above (≥1200px). (The text size for the quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.)
+  - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of some components at certain breakpoints. This is used in particular:
+    -  In the header, where the separate logo and title are replaced by a combined image and text logo on xs viewports.
+    -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on xs, and a separate carousel with larger font-size is provided for xl viewports and above. (The text size for the quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.)
 
 - #### Colour Scheme
 
   ![Website colour scheme palette](readme_images/palette.png)
 
-  - The site is set on an off-white (#F8F9FA) background, while the main colour used for text, logos and buttons is dark green (#213C3D). On larger devices the off-white background is set within a container on a background of the same dark green. Buttons and links transition to a lighter green (#498082) when hovered over.
+  - The site is set on an off-white (#F8F9FA) background, while the main colour used for text, logos and buttons is dark green (#213C3D). On sm viewports and above the off-white background is set within a container on a background of the same dark green. Buttons and links transition to a lighter green (#498082) when hovered over.
 
   - The dark green colour is chosen to represent grass, while the off-white background is typical of websites for companies which cater to the wedding industry. The light green colour for the hover effect is chosen to complement the main dark green.
 
 - #### Imagery
 
-  - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On smaller devices an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
+  - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On xs viewports an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
   
     ![Main logo](readme_images/block_logo_blank_rm.png) ![Logo with text](readme_images/block_logo_rm.png)
 
@@ -99,7 +108,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
   - ##### Title and navigation
 
-    ![Desyrel font shown in website header](readme_images/header_font.png)
+    ![Desyrel font shown in website header](readme_images/header.png)
 
     - The font used for the title and navigation links is Desyrel, with Sans Serif as the fallback font.
 
@@ -123,7 +132,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   
   - The icons inherit their styling from the anchor and list tags within which they are contained, for example inheriting font-size, color and hover effect.
   
-  - Icons are utilised in the header for navigation list items and for the "hamburger" button on smaller devices, and in the footer for social media links.
+  - Icons are utilised in the header for navigation list items and for the "hamburger" button on smaller viewports, and in the footer for social media links.
 
 - #### Favicon
 
@@ -153,9 +162,10 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
  - #### Future Ideas (not currently in scope)
   
     - To provide a better user experience and better meet the business needs of the company, the website also **could have**:
-      1. An up-to-date availability calendar, allowing customers to check whether the games are available on their chosen date.
-      2. A fully end-to-end booking and payment system, allowing customers to book the games on their chosen date, make payment and receive a confirmation.
-      3. A gallery of images from previous events, to add legitimacy and build trust with customers.
+      1. Separate "Book Now" links for each package from the homepage, linking to the booking page while auto-selecting the relevant package from the dropdown menu in the booking form. 
+      2. An up-to-date availability calendar, allowing customers to check whether the games are available on their chosen date.
+      3. A fully end-to-end booking and payment system, allowing customers to book the games on their chosen date, make payment and receive a confirmation.
+      4. A gallery of images from previous events, to add legitimacy and build trust with customers.
 
 ### Page Elements
 
@@ -163,11 +173,25 @@ The website includes the following page elements, in line with the scope outline
 
 - #### All pages
 
-  - All pages include a header with branding on the left-hand side and a navigation menu on the right-hand side. The header is fully responsive:
-    - The title and logo are displayed as a single image on extra small viewports (<576px). On small (≥576px) and medium (≥768px) viewports, the logo and title are displayed separately with the title being stacked in three lines, while on large viewports (≥992px) and above, the title displays as a single line.
-    - The navigation menu collapses to a hamburger menu on extra small viewports, 
+  - ##### Header
+    
+    ![Website header](readme_images/header.png) ![Website header - collapsed](readme_images/header_collapsed.png)
+    
+    - All pages include a header with branding on the left-hand side and a navigation menu on the right-hand side. The header is fully responsive:
+      - The title and logo are displayed as a single image on xs viewports. On sm and md viewports, the logo and title are displayed separately with the title being stacked in three lines, while on lg viewports and above, the title displays as a single line.
+      - The navigation menu collapses to a hamburger menu on xs viewports, but is otherwise displayed as a single line.
+    
+  - ##### Primary image
+  
+    - All pages include a primary image relevant to the content of the page. The image uses [Bootstrap's .img-fluid class](https://getbootstrap.com/docs/5.3/content/images/#responsive-images) to ensure it is fully responsive, stretching across the full width of the viewport for xs viewports, or the full width of the container on sm viewports and above.
+  
+  - ##### Footer
+    
+    ![Website footer](readme_images/footer.png)
+    
+    - All pages include a footer with three equally spaced and centred social media icons, linking to Instagram, Facebook and Whatsapp. The icons utilise automatic margins so that their spacing is reponsive to the viewport size.  
 
-- #### Home page
+- #### Homepage
 - #### About page
 - #### Booking page
 
