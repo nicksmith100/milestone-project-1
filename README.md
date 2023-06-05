@@ -32,11 +32,48 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
   - As a business, we want to:
 
-  1. Increase the reach of the company beyond social media platforms
-  2. Demonstrate legitimacy, professionalsim and trust
-  3. Attract bookings
+    1. Increase the reach of the company beyond social media platforms
+    2. Demonstrate legitimacy, professionalsim and trust
+    3. Attract bookings
 
 ### Design
+
+- #### Wireframes
+
+  - Wireframes were created using the Figma platform, and can be viewed directly here: [Figma - Smith Lawn Games](https://www.figma.com/file/ZwVZsGR4zrrJxL9LcejJ8c/Smith-Lawn-Games?type=design&node-id=0%3A1&t=7b00DC5arYDxJVfg-1).
+
+  - ##### Desktop Wireframes
+
+    ![Desktop wireframes](readme_images/desktop_wireframes.png)
+
+  - ##### Mobile Wireframes
+
+    ![Mobile wireframes](readme_images/mobile_wireframes.png)
+
+  - Only desktop and mobile wireframes were created, the expectation being that tablets in landscape mode would adopt the desktop layout, while tablets in portrait mode would adopt the mobil layout. In reality, the use of [Bootstrap's grid system](https://getbootstrap.com/docs/5.3/layout/grid/) means that the layout is more responsive, providing various layouts at different device breakpoints (more on this below). Nevertheless, the wireframes provided a useful basis for the overall structure of the site.
+
+  - While the overall structure of the site stays true to the wireframes, there are some notable differences in the final page designs which came about for both business and UX reasons:
+
+    - To provide more choice to the customer, rather than offering packages of specific games, the company decided to categorise the games into "tiers" and offer packages coomprising different numbers of games from each tier. Therefore, on the homepage the different packages are displayed in stylised boxes (similar to Monopoly cards) with a description of their contents - and these weren't included in the original wireframes. The games are then displayed beneath in their different tiers, each tier including a slideshow of images and description of the games - akin to the intended layout of the packages as shown in the wireframes.
+
+    - Since the company only has limited photos of the games, and these are already in use on the homepage, a separate gallery page would not have added any value. Therefore the gallery page does not feature in the final design, but may be added once the company has more candid photos of the games in use during events.
+
+    - A "Booking" link was added to the navigation menu, and the "Book Now" button was moved from the header into the main content section on the homepage only. These both link to the booking page, with the "Book Now" button appearing alongisde the packages on the homepage and acting as a call-to-action.
+
+- #### Layout and Styling
+
+  - The site uses the [Bootstrap 5.3 grid system](https://getbootstrap.com/docs/5.3/layout/grid/) to ensure it is fully responsive on all device sizes.
+  
+  - In addition, the site uses the following specific components from the Boostrap library:
+    - The header utilies Bootstrap's [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/), collapsing to a hamburger menu on smaller devices.
+    - The homepage utilises Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) for the customer quotes overlaid on the hero image, and for the image galleries of the games.
+    - The booking page utilises Bootstrap's [Form classes](https://getbootstrap.com/docs/5.3/forms/overview/).  
+  
+  - In the early stages of development I was overriding Bootstrap styles, e.g. to provide custom padding, margins and font-size in pixels. However, as I became more familiar with the Bootstrap toolkit I opted to use its utility classes for [spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/) and [typography](https://getbootstrap.com/docs/5.3/content/typography/), ensuring the layout and font are appropriate to the device in use. 
+
+  - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of components on certain devices. This is used in particular:
+    -  In the header, where the separate logo and title are replaced by a combined image and text logo on xs devices (<576px).
+    -  In the quotes box overlaid on the hero image on the main page, where a separate carousel with larger font-size is provided for xl devices and above (≥1200px). (This was one area where Bootstrap's native responsive styling didn't seem to assist - see [Bugs section](#bugs) below.
 
 - #### Colour Scheme
 
@@ -45,6 +82,16 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   - The main colour used for text, logos and buttons is dark green (#213C3D), on an off-white (#F8F9FA) background. The dark green is also used for the main background on larger devices, sitting either side of an off-white container. Buttons and links transition to a lighter green (#498082) when hovered over.
 
   - The dark green colour is chosen to represent grass, while the off-white background is typical of websites for companies which cater to the wedding industry. The light green colour for the hover effect is chosen to complement the main dark green.
+
+- #### Imagery
+
+  - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On smaller devices an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
+
+  - The **hero image** on the main page is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
+
+  - The main image on the "about" page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings, who are expected to make up the majority of potential customers.
+
+  - The main image on the "booking" page is a notebook surrounded by miscellaneous items, including a pink rose. This ties in with the flowers from the "about" image, providing a link to the company story given on the "about" page.
 
 - #### Typography
 
@@ -68,37 +115,13 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
     - Playfair Display is imported from [Google Fonts](https://fonts.google.com/specimen/Playfair+Display).
 
-- #### Imagery
+- #### Icons
 
-  - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On smaller devices an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
-
-  - The **hero image** on the main page is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
-
-  - The main image on the "about" page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings, who are expected to make up the majority of potential customers.
-
-  - The main image on the "booking" page is a notebook surrounded by miscellaneous items, including a pink rose. This ties in with the flowers from the "about" image, providing a link to the company story given on the "about" page.
-
-- #### Wireframes
-
-  - Wireframes were created using the Figma platform, and can be viewed directly here: [Figma - Smith Lawn Games](https://www.figma.com/file/ZwVZsGR4zrrJxL9LcejJ8c/Smith-Lawn-Games?type=design&node-id=0%3A1&t=7b00DC5arYDxJVfg-1).
-
-  - ##### Desktop Wireframes
-
-    ![Desktop wireframes](readme_images/desktop_wireframes.png)
-
-  - ##### Mobile Wireframes
-
-    ![Mobile wireframes](readme_images/mobile_wireframes.png)
-
-  - Only desktop and mobile wireframes were created, the expectation being that tablets in landscape mode would adopt the desktop layout, while tablets in portrait mode would adopt the mobil layout. In reality, the use of [Bootstrap's grid system](https://getbootstrap.com/docs/5.3/layout/grid/) means that the layout is more responsive, providing various layouts at different device breakpoints (more on this below). Nevertheless, the wireframes provided a useful basis for the overall structure of the site.
-
-  - While the overall structure of the site stays true to the wireframes, there are some notable differences in the final page designs which came about for both business and UX reasons:
-
-    - To provide more choice to the customer, rather than offering packages of specific games, the company decided to categorise the games into "tiers" and offer packages coomprising different numbers of games from each tier. Therefore, on the homepage the different packages are displayed in stylised boxes (similar to Monopoly cards) with a description of their contents - and these weren't included in the original wireframes. The games are then displayed beneath in their different tiers, each tier including a slideshow of images and description of the games - akin to the intended layout of the packages as shown in the wireframes.
-
-    - Since the company only has limited photos of the games, and these are already in use on the homepage, a separate gallery page would not have added any value. Therefore the gallery page does not feature in the final design, but may be added once the company has more candid photos of the games in use during events.
-
-    - A "Booking" link was added to the navigation menu, and the "Book Now" button was moved from the header into the main content section on the homepage only. These both link to the booking page, with the "Book Now" button appearing alongisde the packages on the homepage and acting as a call-to-action.
+  - Icons are taken from the [Bootstrap Icons](https://icons.getbootstrap.com/) library and are utilised as classes in the `<i>` tag.
+  
+  - The icons inherit their styling from the anchor and list tags within which they are contained, for example inheriting font-size, color and hover effect.
+  
+  - Icons are utilised in the header for navigation list items and for the "hamburger" button on smaller devices, and in the footer for social media links.
 
 ## Features
 
