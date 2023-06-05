@@ -234,31 +234,37 @@ The website includes the following page elements, in line with the scope outline
 
 ## Technologies Used
 
-### Languages Used
+### Languages
+- [HTML](w3.org/standards/webdesign/htmlcss)
+  - Used for page markup.
+- [CSS](w3.org/standards/webdesign/htmlcss)
+  - Used for styling.
 
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+### Frameworks
+- [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+  - Used for overall layout and styling of page, as well as specific components as described above.
 
-### Frameworks, Libraries & Programs Used
+### Libraries
+- [Google Fonts](https://fonts.google.com)
+  - Used for font styles.
+- [Bootstrap icons](https://icons.getbootstrap.com/)
+  - Used for icons.
 
-1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-   - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-   - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-1. [Google Fonts:](https://fonts.google.com/)
-   - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-   - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1. [jQuery:](https://jquery.com/)
-   - jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-1. [Git](https://git-scm.com/)
-   - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1. [GitHub:](https://github.com/)
-   - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-   - Photoshop was used to create the logo, resizing images and editing photos for the website.
-1. [Balsamiq:](https://balsamiq.com/)
-   - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+### Platforms
+- [Github](https://github.com/)
+    - Storing code remotely and deployment.
+- [CodeAnywhere](https://app.codeanywhere.com/)
+    - IDE for project development.
+
+### Other Tools
+- [Figma](https://www.figma.com/)
+    - Used to create wireframes.
+- [Favicon Generator](https://www.favicon-generator.org/)
+    - Used to create page favicon
+- [Am I Responsive](https://ui.dev/amiresponsive)
+    - Used to create image of site on different devices.
+- [Coolors](https://coolors.co/)
+    - Used to creating colour pallettes.
 
 ## Testing
 
