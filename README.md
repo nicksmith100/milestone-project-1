@@ -137,7 +137,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
   - As a favicon, the site uses a simple "S" in the Desyrel font, using the dark green colour against a white background. This proved more effective than trying to use the main logo as a favicon, as the detail of it was lost at such a small size.
   
-  - The favicon was generated using [favicon-generator.org](https://www.favicon-generator.org/).
+  - The favicon was generated using [Favicon Generator](https://www.favicon-generator.org/).
 
 ## Features
 
@@ -260,11 +260,11 @@ The website includes the following page elements, in line with the scope outline
 - [Figma](https://www.figma.com/)
     - Used to create wireframes.
 - [Favicon Generator](https://www.favicon-generator.org/)
-    - Used to create page favicon
+    - Used to create the website favicon.
 - [Am I Responsive](https://ui.dev/amiresponsive)
-    - Used to create image of site on different devices.
+    - Used to create montage of different devices displaying the site.
 - [Coolors](https://coolors.co/)
-    - Used to creating colour pallettes.
+    - Used to create colour palette.
 
 ## Testing
 
