@@ -232,8 +232,24 @@ ul.package-list {
 
 /* Games */
 
+/* Fade-out effect adapted from: https://blog.hubspot.com/website/css-fade-in with reference to https://www.w3schools.com/css/css3_animations.asp */
+
 .carousel-games .carousel-caption {
     background: rgba(0, 0, 0, 0.7);
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .games-text li {
