@@ -2,13 +2,11 @@
 
 ![Smith Lawn Games logo](readme_images/readme_logo.png)
 
-[View the live project here](https://nicksmith100.github.io/milestone-project-1/)
-
 This project creates a marketing website for Smith Lawn Games, a real company which offers lawn games for hire for weddings and other events. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for potential customers.
 
-![Smith Lawn Games website displayed on various devices](readme_images/responsive_screens.png)
+[View the live project here](https://nicksmith100.github.io/milestone-project-1/)
 
-## Table of Contents
+![Smith Lawn Games website displayed on various devices](readme_images/responsive_screens.png)
 
 ## User Experience (UX)
 
@@ -62,7 +60,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
 - #### Layout and Styling
 
-  - The site uses the [Bootstrap 5.3 grid system](https://getbootstrap.com/docs/5.3/layout/grid/) to ensure it is fully responsive on all device and viewport sizes. Bootstrap 5.3 uses the following breakpoints which are referenced throughout the rest of this document:
+  - The site uses the [Bootstrap 5.3 Grid system](https://getbootstrap.com/docs/5.3/layout/grid/) to ensure it is fully responsive on all device and viewport sizes. Bootstrap 5.3 uses the following [breakpoints](https://getbootstrap.com/docs/5.3/layout/breakpoints/), the shorthand references for which are used throughout the rest of this document:
     
     | Breakpoint        | Shorthand   | Dimensions |
     |-------------------|-------------|------------|
@@ -76,20 +74,20 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   - In addition, the site uses the following specific components from the Boostrap library:
     - The header utilies Bootstrap's [Navbar](https://getbootstrap.com/docs/5.3/components/navbar/), collapsing to a hamburger menu on xs viewports.
     - The homepage utilises Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) for the customer quotes overlaid on the hero image, and for the image galleries of the games.
-    - The booking page utilises Bootstrap's [Form classes](https://getbootstrap.com/docs/5.3/forms/overview/).  
+    - The booking page utilises Bootstrap's [Form classes](https://getbootstrap.com/docs/5.3/forms/overview/).
+    - The booking page utilises Bootstrap's [Modal plugin](https://getbootstrap.com/docs/5.3/components/modal/) to display terms and conditions at the press of a button.  
   
   - In the early stages of development I was overriding Bootstrap styles, e.g. to provide custom padding, margins and font-size in pixels. However, as I became more familiar with the Bootstrap toolkit I opted to use its utility classes for [spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/) and [typography](https://getbootstrap.com/docs/5.3/content/typography/), ensuring the layout and font are appropriate to the device in use. 
 
   - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of some components at certain breakpoints. This is used in particular:
     -  In the header, where the separate logo and title are replaced by a combined image and text logo on xs viewports.
     -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on xs, and a separate carousel with larger font-size is provided for xl viewports and above. (The text size for the quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.)
-    -  In the games image galleries, where the captions disappear on xs viewports to avoid them dominating the images.
-
+    
 - #### Colour Scheme
 
   ![Website colour scheme palette](readme_images/palette.png)
 
-  - The site is set on an off-white (#F8F9FA) background, while the main colour used for text, logos and buttons is dark green (#213C3D). On sm viewports and above the off-white background is set within a container on a background of the same dark green. Buttons and links transition to a lighter green (#498082) when hovered over.
+  - The site is set on an off-white (#F8F9FA) background, while the main colour used for text, logos and buttons is dark green (#213C3D). On sm viewports and above the off-white background is set within a container on a background of the same dark green. Buttons and links transition to a lighter green (#498082) when hovered over, using an ease-in-out transition for a smooth effect.
 
   - The dark green colour is chosen to represent grass, while the off-white background is typical of websites for companies which cater to the wedding industry. The light green colour for the hover effect is chosen to complement the main dark green.
 
@@ -189,12 +187,12 @@ The website includes the following page elements, in line with the scope outline
   
     - All pages include a primary image relevant to the content of the page. The image uses [Bootstrap's .img-fluid class](https://getbootstrap.com/docs/5.3/content/images/#responsive-images) to ensure it is fully responsive, stretching across the full width of the viewport for xs viewports, or the full width of the container on sm viewports and above.
     
-    ![Hero image - desktop](readme_images/primary_image.png)
-    ![Hero image - mobile](readme_images/primary_image_xs.png)
-  
+    ![Primary image desktop example - About page](readme_images/primary_image_about.png)
+    ![Primary image mobile example - About page](readme_images/primary_image_about_xs.png)
+            
   - ##### Footer
     
-    ![Website footer - desktop](readme_images/footer.png)
+    ![Website footer - desktop](readme_images/footer_desktop.png)
     ![Website footer - mobile](readme_images/footer_xs.png)
     
     - All pages include a footer with three equally spaced and centred social media icons, linking to Instagram, Facebook and Whatsapp. The icons utilise automatic margins so that their spacing is reponsive to the viewport size.  
@@ -202,12 +200,37 @@ The website includes the following page elements, in line with the scope outline
   - #### Homepage
 
     - The primary image on the homepage is overlaid with a box on the right-hand side which provides quotes from previous customers on rotation, utilising Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component. The quotes box disappears at the xs breakpoint to avoid it dominating the primary image.
+      
+      ![Homepage primary image with quote box - desktop](readme_images/homepage_primary_quotes.png)
+      ![Homepage primary image - mobile](readme_images/homepage_primary_xs.png)
+      
     - The main content of the homepage comprises two distinct sections:
+      
       - A section outlining the hire packages on offer, each package including a specific number of games from each tier.
-      - A section illustrating the games in each tier, including an image gallery for each tier using Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component, and a list of games along with descriptions. The captions for the gallery disappear at the xs breakpoint to avoid them dominating the images.
-
-- #### About page
-- #### Booking page
+      
+      - A section illustrating the games in each tier, including an image gallery for each tier using Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component, and a list of games along with descriptions. The captions for the gallery fade out after 2 seconds to avoid them dominating the images.
+      
+      - Both sections utilise the [Grid system](https://getbootstrap.com/docs/5.3/layout/grid/), ensuring that the content adjusts according to viewport size.
+      
+      ![Homepage packages section - desktop](readme_images/packages_desktop.png)
+      ![Homepage packages section - mobile](readme_images/packages_xs.png)
+      ![Homepage games section - desktop](readme_images/games_desktop.png)
+      ![Homepage games section - mobile](readme_images/games_xs.png)
+      
+  - #### About page
+    - The About page is the simplest of all the pages with no particular special features. It includes as its primary image a photograph of the owners of the company during their own wedding celebrations, accompanied by the story of how the company began.
+    
+      ![About page - desktop](readme_images/about_desktop.png)
+          
+  - #### Booking page
+    - The Booking page includes a booking form which allows customers to provide their contact details, event details, the package they wish to book and their selected games, and to submit these details to the company.
+    - The form is arranged into sections for ease of understanding, and includes required fields which will prevent the form from being submitted unless they are completed.
+      
+      ![Booking form - desktop](readme_images/booking_desktop.png)
+            
+    - The form includes a modal to display booking terms and conditions at the press of a button, utilising Bootstrap's [Modal plugin](https://getbootstrap.com/docs/5.3/components/modal/).
+      
+      ![Booking page - modal](readme_images/booking_modal.png)
 
 ## Technologies Used
 
