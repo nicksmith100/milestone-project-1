@@ -68,32 +68,37 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
     - Playfair Display is imported from [Google Fonts](https://fonts.google.com/specimen/Playfair+Display).
 
-#### Imagery
+- #### Imagery
 
-- The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On smaller devices an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
+  - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On smaller devices an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
 
-- The **hero image** on the main page is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
+  - The **hero image** on the main page is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
 
-- The main image on the "about" page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings, who are expected to make up the majority of potential customers.
+  - The main image on the "about" page is of the owners of the company during their own wedding celebrations. This illustrates the origins of the company, complementing the accompanying story and appealing to other couples planning weddings, who are expected to make up the majority of potential customers.
 
-- The main image on the "booking" page is a notebook surrounded by miscellaneous items, including a pink rose. This ties in with the flowers from the "about" image, providing a link to the company story given on the "about" page.
+  - The main image on the "booking" page is a notebook surrounded by miscellaneous items, including a pink rose. This ties in with the flowers from the "about" image, providing a link to the company story given on the "about" page.
 
-#### Wireframes
+- #### Wireframes
 
-There are some notable differences between the wireframes and the final page designs:
+  - Wireframes were created using the Figma platform, and can be viewed directly here: [Figma - Smith Lawn Games](https://www.figma.com/file/ZwVZsGR4zrrJxL9LcejJ8c/Smith-Lawn-Games?type=design&node-id=0%3A1&t=7b00DC5arYDxJVfg-1).
 
-- Rather than offering packages of specific games, the company decided to offer packages which would provide customers with more control over the games selection. Therefore, on the homepage, the different packages are displayed in stylised boxes with a description (similar to Monopoly cards), which weren't included in the original wireframes. The games are then arranged in different "tiers", each tier including a slideshow of images and description of the games - akin to the intended layout of the packages as shown in the wireframes.
-- Since the company only has limited photos of the games, and these are already in use on the homepage, a separate gallery page would not have added any value. Therefore the gallery page does not feature in the final design, but may be added once the company has more photos of the games in use during events.
+  - ##### Desktop Wireframes
 
-- A "Booking" link was added to the navigation menu, and the "Book Now" button was moved from the header into the main content section on the homepage. These both link to the booking page, but the button acts as a "call to action" on the homepage, appearing alongisde the packages.
+    ![Desktop wireframes](readme_images/desktop_wireframes.png)
 
-Desktop Wireframes (also applicable to tablet in landscape mode)
+  - ##### Mobile Wireframes
 
-![Desktop/Tablet wireframes](readme_images/desktop_tablet_wireframes.png)
+    ![Mobile wireframes](readme_images/mobile_wireframes.png)
 
-Mobile Wireframes (also applicable to tablet in portrait mode)
+  - Only desktop and mobile wireframes were created, the expectation being that tablets in landscape mode would adopt the desktop layout, while tablets in portrait mode would adopt the mobil layout. In reality, the use of [Bootstrap's grid system](https://getbootstrap.com/docs/5.3/layout/grid/) means that the layout is more responsive, providing various layouts at different device breakpoints (more on this below). Nevertheless, the wireframes provided a useful basis for the overall structure of the site.
 
-![Mobile wireframes](readme_images/mobile_wireframes.png)
+  - While the overall structure of the site stays true to the wireframes, there are some notable differences in the final page designs which came about for both business and UX reasons:
+
+    - To provide more choice to the customer, rather than offering packages of specific games, the company decided to categorise the games into "tiers" and offer packages coomprising different numbers of games from each tier. Therefore, on the homepage the different packages are displayed in stylised boxes (similar to Monopoly cards) with a description of their contents - and these weren't included in the original wireframes. The games are then displayed beneath in their different tiers, each tier including a slideshow of images and description of the games - akin to the intended layout of the packages as shown in the wireframes.
+
+    - Since the company only has limited photos of the games, and these are already in use on the homepage, a separate gallery page would not have added any value. Therefore the gallery page does not feature in the final design, but may be added once the company has more candid photos of the games in use during events.
+
+    - A "Booking" link was added to the navigation menu, and the "Book Now" button was moved from the header into the main content section on the homepage only. These both link to the booking page, with the "Book Now" button appearing alongisde the packages on the homepage and acting as a call-to-action.
 
 ## Features
 
