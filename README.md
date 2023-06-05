@@ -83,6 +83,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of some components at certain breakpoints. This is used in particular:
     -  In the header, where the separate logo and title are replaced by a combined image and text logo on xs viewports.
     -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on xs, and a separate carousel with larger font-size is provided for xl viewports and above. (The text size for the quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.)
+    -  In the games image galleries, where the captions disappear on xs viewports to avoid them dominating the images.
 
 - #### Colour Scheme
 
@@ -175,23 +176,36 @@ The website includes the following page elements, in line with the scope outline
 
   - ##### Header
     
-    ![Website header](readme_images/header.png) ![Website header - collapsed](readme_images/header_collapsed.png)
+    ![Website header](readme_images/header.png)
+    ![Website header - medium](readme_images/header_md.png)
+    ![Website header - collapsed](readme_images/header_collapsed.png)
     
     - All pages include a header with branding on the left-hand side and a navigation menu on the right-hand side. The header is fully responsive:
-      - The title and logo are displayed as a single image on xs viewports. On sm and md viewports, the logo and title are displayed separately with the title being stacked in three lines, while on lg viewports and above, the title displays as a single line.
+      - The title and logo are displayed as a single image on xs viewports.
+      - On sm and md viewports, the logo and title are displayed separately with the title being stacked in three lines, while on lg viewports and above, the title displays as a single line.
       - The navigation menu collapses to a hamburger menu on xs viewports, but is otherwise displayed as a single line.
     
   - ##### Primary image
   
     - All pages include a primary image relevant to the content of the page. The image uses [Bootstrap's .img-fluid class](https://getbootstrap.com/docs/5.3/content/images/#responsive-images) to ensure it is fully responsive, stretching across the full width of the viewport for xs viewports, or the full width of the container on sm viewports and above.
+    
+    ![Hero image - desktop](readme_images/primary_image.png)
+    ![Hero image - mobile](readme_images/primary_image_xs.png)
   
   - ##### Footer
     
-    ![Website footer](readme_images/footer.png)
+    ![Website footer - desktop](readme_images/footer.png)
+    ![Website footer - mobile](readme_images/footer_xs.png)
     
     - All pages include a footer with three equally spaced and centred social media icons, linking to Instagram, Facebook and Whatsapp. The icons utilise automatic margins so that their spacing is reponsive to the viewport size.  
 
-- #### Homepage
+  - #### Homepage
+
+    - The primary image on the homepage is overlaid with a box on the right-hand side which provides quotes from previous customers on rotation, utilising Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component. The quotes box disappears at the xs breakpoint to avoid it dominating the primary image.
+    - The main content of the homepage comprises two distinct sections:
+      - A section outlining the hire packages on offer, each package including a specific number of games from each tier.
+      - A section illustrating the games in each tier, including an image gallery for each tier using Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component, and a list of games along with descriptions. The captions for the gallery disappear at the xs breakpoint to avoid them dominating the images.
+
 - #### About page
 - #### Booking page
 
