@@ -33,7 +33,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   - As a **Business**, we want to:
 
     1. Increase the reach of the company beyond social media platforms
-    2. Demonstrate legitimacy, professionalsim and trust
+    2. Demonstrate legitimacy, professionalism and trust
     3. Attract bookings
 
 ### Design
@@ -71,9 +71,9 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
   
   - In the early stages of development I was overriding Bootstrap styles, e.g. to provide custom padding, margins and font-size in pixels. However, as I became more familiar with the Bootstrap toolkit I opted to use its utility classes for [spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/) and [typography](https://getbootstrap.com/docs/5.3/content/typography/), ensuring the layout and font are appropriate to the device in use. 
 
-  - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of components on certain devices. This is used in particular:
-    -  In the header, where the separate logo and title are replaced by a combined image and text logo on xs devices (<576px).
-    -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on xs devices (<576px), and a separate carousel with larger font-size is provided for xl devices and above (≥1200px). (The text size for the quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.
+  - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of some components on certain devices. This is used in particular:
+    -  In the header, where the separate logo and title are replaced by a combined image and text logo on extra small devices (<576px).
+    -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on extra small devices (<576px), and a separate carousel with larger font-size is provided for extra large devices and above (≥1200px). (The text size for the quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.)
 
 - #### Colour Scheme
 
@@ -136,12 +136,37 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 ### Scope
 
 - #### Minimum Viable Product
+
+  - To be viable as a marketing website for the company, the website **must have**:
+    1. Information on the products available to hire.
+    2. Contact details to allow customers to reach the company and make bookings.
+         
 - #### Additional Features (in scope)
-- #### Future Ideas (not currently in scope)
+
+  - To provide a good user experience and meet the stated business needs of the company, the website also **should have**:
+    1. Images of the products available to hire.
+    2. An online booking form to allow customers to make bookings directly from the site.
+    3. An "About page" to allow customers to connect to the origin story of the company.
+    4. Quotes from previous customers to add legitimacy and build trust with customers.
+    5. Social media links to add legitimacy and allow customers to connect through their preferred platform.
+   
+ - #### Future Ideas (not currently in scope)
+  
+    - To provide a better user experience and better meet the business needs of the company, the website also **could have**:
+      1. An up-to-date availability calendar, allowing customers to check whether the games are available on their chosen date.
+      2. A fully end-to-end booking and payment system, allowing customers to book the games on their chosen date, make payment and receive a confirmation.
+      3. A gallery of images from previous events, to add legitimacy and build trust with customers.
 
 ### Page Elements
 
+The website includes the following page elements, in line with the scope outlined above. 
+
 - #### All pages
+
+  - All pages include a header with branding on the left-hand side and a navigation menu on the right-hand side. The header is fully responsive:
+    - The title and logo are displayed as a single image on extra small viewports (<576px). On small (≥576px) and medium (≥768px) viewports, the logo and title are displayed separately with the title being stacked in three lines, while on large viewports (≥992px) and above, the title displays as a single line.
+    - The navigation menu collapses to a hamburger menu on extra small viewports, 
+
 - #### Home page
 - #### About page
 - #### Booking page
