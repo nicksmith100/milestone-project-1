@@ -48,11 +48,11 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
     ![Mobile wireframes](readme_images/mobile_wireframes.png)
 
-  - Only desktop and mobile wireframes were created, the expectation being that tablets in landscape mode would adopt the desktop layout, while tablets in portrait mode would adopt the mobil layout. In reality, the use of [Bootstrap's grid system](https://getbootstrap.com/docs/5.3/layout/grid/) means that the layout is more responsive, providing various layouts at different device breakpoints (more on this in the **Layout and Styling** section below). Nevertheless, the wireframes provided a useful reference to keep the overall layout of the site on track.
+  - Only desktop and mobile wireframes were created, the expectation being that tablets in landscape mode would adopt the desktop layout, while tablets in portrait mode would adopt the mobile layout. In reality, the use of [Bootstrap's grid system](https://getbootstrap.com/docs/5.3/layout/grid/) means that the layout is more responsive, providing various layouts at different device breakpoints (see **Layout and Styling** section below). Nevertheless, the wireframes provided a useful reference to keep the overall layout of the site on track.
 
   - While the overall structure of the site stays true to the wireframes, there are some notable differences in the final page designs which came about for both business and UX reasons:
 
-    - To provide more choice to the customer, rather than offering packages of specific games, the company decided to categorise the games into "tiers" and offer packages coomprising different numbers of games from each tier. Therefore, on the homepage the different packages are displayed in stylised boxes (similar to Monopoly cards) with a description of their contents - and these weren't included in the original wireframes. The games are then displayed beneath in their different tiers, each tier including a slideshow of images and description of the games - akin to the intended layout of the packages as shown in the wireframes.
+    - To provide more choice to the customer, rather than offering packages of specific games, the company decided to categorise the games into "tiers" and offer packages comprising different numbers of games from each tier. Therefore, on the homepage the different packages are displayed in stylised boxes (similar to Monopoly cards) with a description of their contents - and these weren't included in the original wireframes. The games are then displayed beneath in their different tiers, each tier including a slideshow of images and description of the games - akin to the intended layout of the packages as shown in the wireframes.
 
     - Since the company only has limited photos of the games, and these are already in use on the homepage, a separate gallery page would not have added any value. Therefore the gallery page does not feature in the final design, but may be added once the company has more candid photos of the games in use during events.
 
@@ -77,25 +77,29 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
     - The booking page utilises Bootstrap's [Form classes](https://getbootstrap.com/docs/5.3/forms/overview/).
     - The booking page utilises Bootstrap's [Modal plugin](https://getbootstrap.com/docs/5.3/components/modal/) to display terms and conditions at the press of a button.  
   
-  - In the early stages of development I was overriding Bootstrap styles, e.g. to provide custom padding, margins and font-size in pixels. However, as I became more familiar with the Bootstrap toolkit I opted to use its utility classes for [spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/) and [typography](https://getbootstrap.com/docs/5.3/content/typography/), ensuring the layout and font are appropriate to the device in use. 
+  - In the early stages of development I was relying on my own CSS file to override Bootstrap styling, e.g. to provide custom padding, margins and font-size in pixels. However, as I became more familiar with the Bootstrap toolkit I opted to use its utility classes for [spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/) and [typography](https://getbootstrap.com/docs/5.3/content/typography/), ensuring the layout and font are appropriate to the device in use. 
 
-  - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of some components at certain breakpoints. This is used in particular:
+  - I have also used the Boostrap [Display property](https://getbootstrap.com/docs/5.3/utilities/display/) to toggle the visibility of some components at certain breakpoints, in particular:
     -  In the header, where the separate logo and title are replaced by a combined image and text logo on xs viewports.
-    -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on xs, and a separate carousel with larger font-size is provided for xl viewports and above. (The text size for the quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.)
+    -  In the quotes box overlaid on the hero image on the main page, where the carousel disappears on xs, and a separate carousel with larger font-size is provided for xl viewports and above. (The quotes carousel was one area where Bootstrap's native responsive styling didn't seem to assist - see **Fixed Bugs** section below.)
     
 - #### Colour Scheme
 
-  ![Website colour scheme palette](readme_images/palette.png)
-
   - The site is set on an off-white (#F8F9FA) background, while the main colour used for text, logos and buttons is dark green (#213C3D). On sm viewports and above the off-white background is set within a container on a background of the same dark green. Buttons and links transition to a lighter green (#498082) when hovered over, using an ease-in-out transition for a smooth effect.
+
+    ![Website colour scheme palette](readme_images/palette.png)
 
   - The dark green colour is chosen to represent grass, while the off-white background is typical of websites for companies which cater to the wedding industry. The light green colour for the hover effect is chosen to complement the main dark green.
 
 - #### Imagery
 
-  - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games. On xs viewports an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
+  - The **logo** is a stylised image of a Jenga-style block tower game, one of the most widely recognised lawn games.
+
+    ![Main logo](readme_images/block_logo_blank_rm.png)
+    
+  - On xs viewports an alternative version of the logo is used which includes the name of the company in the Desyrel font, effectively combining the logo and title.
   
-    ![Main logo](readme_images/block_logo_blank_rm.png) ![Logo with text](readme_images/block_logo_rm.png)
+    ![Logo with text](readme_images/block_logo_rm.png)
 
   - The **hero image** on the homepage is a colourful stack of tin cans, showcasing one of the games in use on a sunny summer's day, illustrating the main purpose of the company.
 
@@ -125,7 +129,7 @@ This project creates a marketing website for Smith Lawn Games, a real company wh
 
     - The font used throughout the rest of the site is Playfair Display, with Serif as the fallback font.
 
-    - Playfair Display is a classy, stylish serif font which complements the playfulness of the heading font, demonstrating the professionalism of the company.
+    - Playfair Display is a classy, stylish serif font which provides a contrast to the playfulness of the heading font, demonstrating the professionalism of the company.
 
     - Playfair Display is imported from [Google Fonts](https://fonts.google.com/specimen/Playfair+Display).
 
@@ -197,7 +201,7 @@ The website includes the following page elements, in line with the scope outline
     
   - ##### Primary image
           
-    - All pages include a primary image relevant to the content of the page. The image uses [Bootstrap's .img-fluid class](https://getbootstrap.com/docs/5.3/content/images/#responsive-images) to ensure it is fully responsive, stretching across the full width of the viewport for xs viewports, or the full width of the container on sm viewports and above.
+    - All pages include a primary image relevant to the content of the page. Each image uses [Bootstrap's .img-fluid class](https://getbootstrap.com/docs/5.3/content/images/#responsive-images) to ensure it is fully responsive, stretching across the full width of the viewport for xs viewports, or the full width of the container on sm viewports and above.
     
     - Primary image - desktop
       
@@ -221,29 +225,29 @@ The website includes the following page elements, in line with the scope outline
 
   - #### Homepage
 
-    - The primary image on the homepage is overlaid with a box on the right-hand side which provides quotes from previous customers on rotation, utilising Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component.
+    - The primary image on the homepage is overlaid with a box on the right-hand side which presents three quotes from previous customers on rotation, utilising Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component.
       
       ![Homepage primary image with quote box - desktop](readme_images/homepage_primary_quotes.png)
       
-    - The quotes box disappears at the xs breakpoint to avoid it dominating the primary image.
+    - The quotes box disappears at the xs breakpoint as the text would either be too small to read or the box would dominate the primary image.
       
       ![Homepage primary image - mobile](readme_images/homepage_primary_xs.png)
       
     - The main content of the homepage comprises two distinct sections:
       
-      - A section outlining the hire packages on offer, each package including a specific number of games from each tier.
+      - A section outlining the hire packages on offer, each package including a specific number of games from each tier, along with a "Book Now" button.
       
         ![Homepage packages section - desktop](readme_images/packages_desktop.png)
         
         ![Homepage packages section - mobile](readme_images/packages_xs.png)
               
-      - A section illustrating the games in each tier, including an image gallery for each tier using Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component, and a list of games along with descriptions. The captions for the gallery fade out after 2 seconds to avoid them dominating the images.
+      - A section illustrating the games in each tier, each tier including an image gallery using Bootstrap's [Carousel](https://getbootstrap.com/docs/5.3/components/carousel/) component, and a list of games along with descriptions. The captions for the gallery fade out after 2 seconds to avoid them dominating the images.
         
         ![Homepage games section - desktop](readme_images/games_desktop.png)
         
         ![Homepage games section - mobile](readme_images/games_xs.png)
        
-      - Both sections utilise Bootstrap's [Grid system](https://getbootstrap.com/docs/5.3/layout/grid/), ensuring that the content adjusts according to viewport size.
+      - Both sections utilise Bootstrap's [Grid system](https://getbootstrap.com/docs/5.3/layout/grid/), ensuring that the content adjusts according to viewport size as shown above.
       
   - #### About page
       
@@ -265,39 +269,39 @@ The website includes the following page elements, in line with the scope outline
 
 ### Languages
 - [HTML](https://html.spec.whatwg.org/multipage/)
-  - Standard markup language for web pages.
+  - Standard markup language for web pages
 - [CSS](https://www.w3.org/Style/CSS/)
-  - Used to add style to HTML.
+  - Used to add style to HTML
 
 ### Frameworks
 - [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-  - Used for overall layout and styling of page, as well as specific components as described above.
+  - Used for overall layout and styling of page, as well as specific components as described above
 
 ### Libraries
 - [Google Fonts](https://fonts.google.com)
-  - Used for importing Playfair Display font.
+  - Used for importing Playfair Display font
 - [Dafont](https://dafont.com/)
-  - Used to download Desyrel font. 
+  - Used to download Desyrel font
 - [Bootstrap icons](https://icons.getbootstrap.com/)
-  - Used for icons.
+  - Used for icons
 
 ### Platforms
 - [Github](https://github.com/)
-  - Used to store code remotely and for deployment.
+  - Used to store code remotely and for deployment
 - [CodeAnywhere](https://app.codeanywhere.com/)
-  - IDE used for project development.
+  - IDE used for project development
 
 ### Other Tools
 - [Figma](https://www.figma.com/)
-  - Used to create wireframes.
+  - Used to create wireframes
 - [Coolors](https://coolors.co/)
-  - Used to create colour palette.
+  - Used to create colour palette
 - [Transfonter](https://transfonter.org/)
   - Used to convert TrueType font to @font-face 
 - [Favicon Generator](https://www.favicon-generator.org/)
-  - Used to create the website favicon.
+  - Used to create the website favicon
 - [Am I Responsive](https://ui.dev/amiresponsive)
-  - Used to create montage of different devices displaying the site.
+  - Used to create montage of different devices displaying the site
 
 ## Testing
 
@@ -308,23 +312,25 @@ The website includes the following page elements, in line with the scope outline
 
 ### Accessibility
 
-- [Lighthouse accessibility](https://developer.chrome.com/docs/lighthouse/accessibility/) audit scores (accessed through Chrome developer tools) show that the site is fully accessible and complies with best practices.
+- [Lighthouse accessibility](https://developer.chrome.com/docs/lighthouse/accessibility/) audit scores (accessed through Chrome DevTools) show that the site is fully accessible and complies with best practices.
 
   ![Lighthouse scores](readme_images/lighthouse.png)
 
 ### Manual Testing
 
 - The Website was fully tested on the following browsers and devices, checking that all features and links worked correctly:
-  - Firefox 113.0.2 (64-bit) on Dell Latitude E6420 laptop running Windows 10 Home.
-  - Google Chrome 113.0.5672.127 (Official Build) (64-bit) on Dell Latitude E6420 laptop running Windows 10 Home.
-  - Google Chrome 113.0.5672.127 (Official Build) (64-bit) on Microsoft Surface Pro 7 256GB running Windows 10 Enterprise.
-  - Google Chrome 113.0.5672.162 on Xiaomi Mi 10 Lite 5G device running Android 12.
-  - Google Chrome 113.0.5672.163 on Huawei HONOR 20 Lite running Android 10.
-  - Microsoft Edge 114.0.1823.37 (Official build) (64-bit) on Dell Latitude E6420 laptop running Windows 10 Home.
-  - Microsoft Edge 112.0.1722.39 (Official build) (64-bit) on Microsoft Surface Pro 7 256GB running Windows 10 Enterprise.
-  - Safari on Apple iPad (9th generation) running iPadOS 16.5.
-  - Safari on Apple iPad Pro (12.9-inch) (4th generation) running iPadOS 16.3.1.
-- Friends and family members reviewed the site on various devices to highlight any bugs and/or user experience issues.
+
+| Browser        | Version                                  | Device                                      | Operating Sytem       | Results                                                        |
+|----------------|------------------------------------------|---------------------------------------------|-----------------------|----------------------------------------------------------------|
+| Firefox        | 113.0.2 (64-bit)                         | Dell Latitude E6420 laptop                  | Windows 10 Home       | Fully functional                                               |
+| Google Chrome  | 113.0.5672.127 (Official Build) (64-bit) | Dell Latitude E6420 laptop                  | Windows 10 Home       | Minor issue with form warnings - see **Known Bugs**            |
+| Google Chrome  | 113.0.5672.127 (Official Build) (64-bit) | Microsoft Surface Pro 7 256GB               | Windows 10 Enterprise | Minor issue with form warnings - see **Known Bugs***           |
+| Google Chrome  | 113.0.5672.162                           | Xiaomi Mi 10 Lite 5G                        | Android 12            | Minor issue with form warnings - see **Known Bugs***           |
+| Google Chrome  | 113.0.5672.163                           | Huawei HONOR 20 Lite                        | Android 10            | Minor issue with form warnings - see **Known Bugs***           |
+| Microsoft Edge | 114.0.1823.37 (Official build) (64-bit)  | Dell Latitude E6420 laptop                  | Windows 10 Home       | Minor issue with form warnings - see **Known Bugs***           |
+| Microsoft Edge | 112.0.1722.39 (Official build) (64-bit)  | Microsoft Surface Pro 7 256GB               | Windows 10 Enterprise | Minor issue with form warnings - see **Known Bugs***           |
+| Safari         | 16.5                                     | Apple iPad (9th generation) running         | iPadOS 16.5           | Minor issue with touch input on galleries - see **Known Bugs** |
+| Safari         | 16.3.1                                   | Apple iPad Pro (12.9-inch) (4th generation) | iPadOS 16.3.1         | Minor issue with touch input on galleries - see **Known Bugs** |
 
 ### Fixed Bugs
 
@@ -333,8 +339,9 @@ The website includes the following page elements, in line with the scope outline
 
 ### Known Bugs
 
-- On Google Chrome and Microsoft Edge browsers, if a required form field is not populated and the field is off screen when "Submit" is pressed, the browser jumps back to that field and highlights it, but does **not** display a warning to the user that the field must be filled in. This error does not occur on Firefox or Safari browsers. Despite extensive investigation, I have been unable to find the cause of this bug, and cannot determine if it is due to any fault in the code. 
+- On Google Chrome and Microsoft Edge browsers, if a required form field is not populated and the field is off screen when "Submit" is pressed, the browser jumps back to that field and highlights it, but does **not** display a warning to the user that the field must be filled in. This error does not occur on Firefox or Safari browsers. Despite extensive investigation, I have been unable to find the cause of this bug, and cannot determine if it is due to any fault in the code. This could be circumvented by separating the form into separate pages, but that is beyond the scope of this project.
 - On touch devices, the image carousels do not react to swipe actions unless they have already been interacted with using the next button. Searching relevant forums suggests that adding `data-touch="true"` to the carousel div should solve this, but it does not. It appears that a workable solution may require JavaScript which is beyond the scope of this project.
+- The Booking page returns a minor warning concerning two `<h1>` elements. Only one `<h1>` element is actually displayed at any one time, and the second one as been given the attribute `aria-hidden="true"` to avoid being read by screen readers, but the error remains. Oddly, the error is not returned on the other pages which all include the same code. As this is only a minor warning and not an error, it has not been investigated further at this stage.   
 
 ## Development and Deployment
 
@@ -360,7 +367,8 @@ The project was deployed to GitHub Pages using the following steps.
 - [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/layout/grid/): Bootstrap Library used throughout the project, to make the site responsive using the Bootstrap Grid System, and specific components as outlined above.
 - [Code Institute - adding hover CSS](https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/tree/master/07-adding-hover-css): Used to provide ease-in-out transition on navigation links, social links and buttons.
 - [How to vertically center a bootstrap carousel caption](https://stackoverflow.com/questions/27279865/how-to-vertically-center-a-bootstrap-carousel-caption): Used to vertically centre quotes in box overlaid on hero image on homepage.
-- [CSS fade-in effect](https://blog.hubspot.com/website/css-fade-in): For fade-in effect used on primary images. Also adapted with reference to [W3 CSS animations](https://www.w3schools.com/css/css3_animations.asp) to provide fade-out effect on image gallery captions.
+- [CSS fade-in effect](https://blog.hubspot.com/website/css-fade-in): For fade-in effect used on primary images.
+- [W3 CSS animations](https://www.w3schools.com/css/css3_animations.asp): Used to adapt the above fade-in effect to provide a fade-out effect on image gallery captions.
 - [Applying the required attribute to select fields](https://stackoverflow.com/questions/6048710/can-i-apply-the-required-attribute-to-select-fields-in-html): Used to ensure the dropdown selecter in the booking form operates as a required field.
 
 ### Content
