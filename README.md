@@ -306,6 +306,12 @@ The website includes the following page elements, in line with the scope outline
 - [W3C Markup Validator](https://validator.w3.org/) returns no errors against any of the pages. (It does, however, return a minor warning against the booking.html page - see **Known Bugs** section.)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) returns no errors or warnings.
 
+### Accessibility
+
+- [Lighthouse accessibility](https://developer.chrome.com/docs/lighthouse/accessibility/) audit scores (accessed through Chrome developer tools) show that the site is fully accessible and complies with best practices.
+
+  ![Lighthouse scores](readme_images/lighthouse_scores.png)
+
 ### Manual Testing
 
 - The Website was fully tested on the following browsers and devices, checking that all features and links worked correctly:
