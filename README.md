@@ -309,18 +309,24 @@ The website includes the following page elements, in line with the scope outline
 ### Manual Testing
 
 - The Website was fully tested on the following browsers and devices, checking that all features and links worked correctly:
-  - Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
-- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-- A large amount of testing was done to ensure that all pages were linking correctly.
-- Friends and family members reviewed the site to highlight any bugs and/or user experience issues.
+  - Firefox 113.0.2 (64-bit) on Dell Latitude E6420 laptop running Windows 10 Home.
+  - Google Chrome 113.0.5672.127 (Official Build) (64-bit) on Dell Latitude E6420 laptop running Windows 10 Home.
+  - Google Chrome 113.0.5672.127 (Official Build) (64-bit) on Microsoft Surface Pro 7 256GB running Windows 10 Enterprise.
+  - Google Chrome 113.0.5672.162 on Xiaomi Mi 10 Lite 5G device running Android 12.
+  - Google Chrome 113.0.5672.163 on Huawei HONOR 20 Lite running Android 10.
+  - Microsoft Edge 114.0.1823.37 (Official build) (64-bit) on Dell Latitude E6420 laptop running Windows 10 Home.
+  - Microsoft Edge 112.0.1722.39 (Official build) (64-bit) on Microsoft Surface Pro 7 256GB running Windows 10 Enterprise.
+  - Safari on Apple iPad (9th generation) running iPadOS 16.5.
+  - Safari on Apple iPad Pro (12.9-inch) (4th generation) running iPadOS 16.3.1.
+- Friends and family members reviewed the site on various devices to highlight any bugs and/or user experience issues.
 
-### Fixed
+### Fixed Bugs
+
+- On touch devices, the image carousels could not be swiped unless the next arrow was first pressed. This was solved by adding `data-touch="true"` to the carousel div.
 
 ### Known Bugs
 
-- On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-  - A white gap can be seen to the right of the footer and navigation bar as a result.
-- On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+- On Google Chrome and Microsoft Edge browsers, if a required form field is not populated and the field is off screen when "Submit" is pressed, the browser jumps back to that field and highlights it, but **does not** display a warning to the user that the field must be filled in. This error does not occur on Firefox or Safari browsers. Despite extensive investigation, I have been unable to find the cause of this bug, and cannot determine if it is due to any fault in the code. 
 
 ## Deployment
 
